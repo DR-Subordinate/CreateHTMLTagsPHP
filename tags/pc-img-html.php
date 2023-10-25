@@ -4,8 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>ブランドアクロス</title>
 <link rel="stylesheet" type="text/css" href="./css/zoom.css">
-<script type="text/javascript" src="./js/jquery.js"></script>
-<script type="text/javascript" src="./js/jquery.elevatezoom.js"></script>
+<script type="text/javascript" src="../dist/jquery.js"></script>
+<script type="text/javascript" src="../dist/elevatezoom.min.js"></script>
 <script type="text/javascript" >
 $(document).ready(function () {
 $("#img_01").elevateZoom({gallery:'galleryBox', cursor: 'pointer', galleryActiveClass: "active", imageCrossfade: true, loadingIcon: "https://www.elevateweb.co.uk/spinner.gif", easing : true, scrollZoom : true,

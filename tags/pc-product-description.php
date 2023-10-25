@@ -1,6 +1,6 @@
 <img src="https://image.rakuten.co.jp/brandacross/cabinet/20220106_2.jpg" width="350" style="margin-bottom:10px;">
 	
-	<?php if($_POST['gift'] == "on"): ?>
+	<?php if($_POST['add-wrapping-banner'] == "true"): ?>
 <br><table border="0" cellspacing="0" cellpadding="0">
 <tr valign="top">
 <td nowrap><a href="https://item.rakuten.co.jp/brandacross/c/0000000251/"><img src="https://image.rakuten.co.jp/brandacross/cabinet/tag_wrapping.jpg" alt="ラッピング対応" width="100" height="21"></a></td>
@@ -13,7 +13,7 @@
 
 <tr>
 <th>管理番号</th>
-<td><?php echo $_POST['kanri']; ?></td>
+<td><?php echo $_POST['management-number']; ?></td>
 </tr>
 <tr>
 <th>ブランド</th>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <th>商品名</th>
-<td><?php echo $_POST['name']; ?></td>
+<td><?php echo $_POST['product-name']; ?></td>
 </tr>
 <?php if(!empty($_POST['line'])): ?>
 <tr>
@@ -29,25 +29,25 @@
 <td><?php echo nl2br($_POST['line']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['sozai'])): ?>
+<?php if(!empty($_POST['material'])): ?>
 <tr>
 <th>素材</th>
-<td><?php echo nl2br($_POST['sozai']); ?></td>
+<td><?php echo nl2br($_POST['material']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['kataban'])): ?>
+<?php if(!empty($_POST['model-number'])): ?>
 <tr>
 <th>型番</th>
-<td><?php echo nl2br($_POST['kataban']); ?></td>
+<td><?php echo nl2br($_POST['model-number']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['seizou'])): ?>
+<?php if(!empty($_POST['serial-number'])): ?>
 <tr>
 <th>製造番号</th>
-<td><?php echo nl2br($_POST['seizou']); ?></td>
+<td><?php echo nl2br($_POST['serial-number']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if($_POST['seizoukoku'] == "on"): ?>
+<?php if($_POST['show-country-of-manufacture'] == "true"): ?>
 <tr>
 <th>製造国</th>
 <td>フランス・スペイン・イタリアのいずれか<br>(※まれにUSAもございます)</td>
@@ -59,16 +59,16 @@
 <td><?php echo nl2br($_POST['color']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if($_POST['color_he'] == "on"): ?>
+<?php if($_POST['show-hermes-color-description'] == "true"): ?>
 <tr>
 <th>カラーに関して</th>
 <td>エルメスのカラーに関して、実際の色味を表現出来ますよう、撮影・加工に尽力しておりますが、ご覧頂く環境によって異なる場合がございます。 必ずご希望のカラー名の確認をお願い致します。</td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['style'])): ?>
+<?php if(!empty($_POST['shape'])): ?>
 <tr>
 <th>形状</th>
-<td><?php echo nl2br($_POST['style']); ?></td>
+<td><?php echo nl2br($_POST['shape']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['sex'])): ?>
@@ -77,16 +77,16 @@
 <td><?php echo nl2br($_POST['sex']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['teika'])): ?>
+<?php if(!empty($_POST['price'])): ?>
 <tr>
 <th>参考定価</th>
-<td><?php echo $_POST['teika']; ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
+<td><?php echo $_POST['price']; ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['size'])): ?>
 <tr>
 <th>サイズ</th>
-<td><?php echo nl2br($_POST['size']); ?><?php if($_POST['yubiwa'] == "on"): ?>
+<td><?php echo nl2br($_POST['size']); ?><?php if($_POST['change-ring-size'] == "true"): ?>
 <br><a href="https://item.rakuten.co.jp/brandacross/c/0000000166/"><font size="2">サイズ直し1サイズ無料詳しくはこちら</font></a>
 <br>サイズ直しをした場合返品不可となります。
 <?php endif; ?>
@@ -94,48 +94,48 @@
 </td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['omosa'])): ?>
+<?php if(!empty($_POST['weight'])): ?>
 <tr>
 <th>重量</th>
-<td><?php echo nl2br($_POST['omosa']); ?></td>
+<td><?php echo nl2br($_POST['weight']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['kinou'])): ?>
+<?php if(!empty($_POST['feature'])): ?>
 <tr>
 <th>機能</th>
-<td><?php echo nl2br($_POST['kinou']); ?></td>
+<td><?php echo nl2br($_POST['feature']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['syuunou'])): ?>
+<?php if(!empty($_POST['containable-item'])): ?>
 <tr>
 <th>収納可能アイテム</th>
-<td><?php echo nl2br($_POST['syuunou']); ?></td>
+<td><?php echo nl2br($_POST['containable-item']); ?></td>
 </tr>
 <?php endif; ?>
 
-<?php if(!empty($_POST['huzoku'])): ?>
+<?php if(!empty($_POST['accessory'])): ?>
 <tr>
 <th>付属品</th>
-<td><?php echo nl2br($_POST['huzoku']); ?>
-<?php if($_POST['neck'] == "on"): ?>
+<td><?php echo nl2br($_POST['accessory']); ?>
+<?php if($_POST['add-top'] == "true"): ?>
 <br>※チェーンは付属致しません。<br>
 <a href="https://item.rakuten.co.jp/brandacross/c/0000000260/">ネックレスチェーンはこちら</a>
 <?php endif; ?>
-<?php if($_POST['neck2'] == "on"): ?>
+<?php if($_POST['add-chain'] == "true"): ?>
 <br>
 <a href="https://item.rakuten.co.jp/brandacross/c/0000000261/">ペンダントトップはこちら</a>
 <?php endif; ?>
 <br><br>写真・説明欄に表記されている付属品以外は付属しておりません。
 </td>
 </tr>
-<?php elseif($_POST['neck'] == "on"): ?>
+<?php elseif($_POST['add-top'] == "true"): ?>
 <tr>
 <th>付属品</th>
 <td>※チェーンは付属致しません。<br>
 <a href="https://item.rakuten.co.jp/brandacross/c/0000000260/">ネックレスチェーンはこちら</a>
 </td>
 </tr>
-<?php elseif($_POST['neck2'] == "on"): ?>
+<?php elseif($_POST['add-chain'] == "true"): ?>
 <tr>
 <th>付属品</th>
 <td>
@@ -147,29 +147,29 @@
 
 
 
-<?php if(!empty($_POST['staff'])): ?>
+<?php if(!empty($_POST['staff-comment'])): ?>
 <tr>
 <th>スタッフコメント</th>
-<td><?php echo nl2br($_POST['staff']); ?>
+<td><?php echo nl2br($_POST['staff-comment']); ?>
 </td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['free'])): ?>
+<?php if(!empty($_POST['free-text-content'])): ?>
 <tr>
-<th><?php echo $_POST['freetitle']; ?></th>
-<td><?php echo nl2br($_POST['free']); ?></td>
+<th><?php echo $_POST['free-text']; ?></th>
+<td><?php echo nl2br($_POST['free-text-content']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['free2'])): ?>
+<?php if(!empty($_POST['free-text-content-2'])): ?>
 <tr>
-<th><?php echo $_POST['freetitle2']; ?></th>
-<td><?php echo $_POST['free2']; ?></td>
+<th><?php echo $_POST['free-text-2']; ?></th>
+<td><?php echo $_POST['free-text-content-2']; ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['free3'])): ?>
+<?php if(!empty($_POST['free-text-content-3'])): ?>
 <tr>
-<th><?php echo $_POST['freetitle3']; ?></th>
-<td><?php echo $_POST['free3']; ?></td>
+<th><?php echo $_POST['free-text-3']; ?></th>
+<td><?php echo $_POST['free-text-content-3']; ?></td>
 </tr>
 <?php endif; ?>
 
@@ -179,10 +179,10 @@
 <br />
 <table class="tblitemrank">
 <tr>
-	<th style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;"><?php echo $_POST['joutai']; ?></th>
+	<th style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;"><?php echo $_POST['condition']; ?></th>
 	<td>
 <?php 
-switch ($_POST['joutai']) {
+switch ($_POST['condition']) {
     case "N":
         echo "新品、未使用品  製造から2年以内の商品";
         break;
@@ -212,22 +212,22 @@ switch ($_POST['joutai']) {
         break;
 }
  ?></td></tr>
-<?php if(!empty($_POST['soto'])): ?>
+<?php if(!empty($_POST['outside'])): ?>
 <tr>
 <th>外側</th>
-<td><?php echo nl2br($_POST['soto']); ?></td>
+<td><?php echo nl2br($_POST['outside']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['uti'])): ?>
+<?php if(!empty($_POST['inside'])): ?>
 <tr>
 <th>内側</th>
-<td><?php echo nl2br($_POST['uti']); ?></td>
+<td><?php echo nl2br($_POST['inside']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['zen'])): ?>
+<?php if(!empty($_POST['special-note'])): ?>
 <tr>
 <th>特記</th>
-<td><?php echo nl2br($_POST['zen']); ?></td>
+<td><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['syousai'])): ?>
@@ -251,29 +251,29 @@ switch ($_POST['joutai']) {
 		<th>J</th>
 	</tr>
 	<tr>
-		<td<?php if($_POST['joutai'] == "N"):?> bgcolor="#FFF766"<?php endif; ?>>新<br>品</td>
-		<td<?php if($_POST['joutai'] == "NS"):?> bgcolor="#FFF766"<?php endif; ?>>未<br>使<br>用<br>品</td>
-		<td<?php if($_POST['joutai'] == "S"):?> bgcolor="#FFF766"<?php endif; ?>>新<br>品<br>同<br>様<br>品</td>
-		<td<?php if($_POST['joutai'] == "A"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>超<br>美<br>品</td>
-		<td<?php if($_POST['joutai'] == "AB"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>美<br>品</td>
-		<td<?php if($_POST['joutai'] == "B"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>良<br>品</td>
-		<td<?php if($_POST['joutai'] == "BC"):?> bgcolor="#FFF766"<?php endif; ?>>強<br>い<br>使<br>用<br>感</td>
-		<td<?php if($_POST['joutai'] == "C"):?> bgcolor="#FFF766"<?php endif; ?>>破<br>損<br>有</td>
-		<td<?php if($_POST['joutai'] == "J"):?> bgcolor="#FFF766"<?php endif; ?>>要<br>修<br>理</td>
+		<td<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php endif; ?>>新<br>品</td>
+		<td<?php if($_POST['condition'] == "NS"):?> bgcolor="#FFF766"<?php endif; ?>>未<br>使<br>用<br>品</td>
+		<td<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php endif; ?>>新<br>品<br>同<br>様<br>品</td>
+		<td<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>超<br>美<br>品</td>
+		<td<?php if($_POST['condition'] == "AB"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>美<br>品</td>
+		<td<?php if($_POST['condition'] == "B"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>良<br>品</td>
+		<td<?php if($_POST['condition'] == "BC"):?> bgcolor="#FFF766"<?php endif; ?>>強<br>い<br>使<br>用<br>感</td>
+		<td<?php if($_POST['condition'] == "C"):?> bgcolor="#FFF766"<?php endif; ?>>破<br>損<br>有</td>
+		<td<?php if($_POST['condition'] == "J"):?> bgcolor="#FFF766"<?php endif; ?>>要<br>修<br>理</td>
 	</tr>
 </table>
 <br>
 <div class="monitoratten">※モニターの発色具合によって実際のものと色が異なる場合がございます。</div>
 <br>
 <div class="descBanner">
-<?php if($_POST['yahooImg'] != "on"): ?>
-<?php if(!empty($_POST['start'])): ?>
+<?php if($_POST['show-yahoo-img'] != "true"): ?>
+<?php if(!empty($_POST['start-number'])): ?>
 <div>
-<a href="https://item.rakuten.co.jp/brandacross/<?php echo $_POST['bangou']; ?>/#syousai" style="display:block;"><img src="https://www.rakuten.ne.jp/gold/brandacross/images/bar/gazou_link.gif?d=2014051900" alt="詳細画像はこちら"></a>
+<a href="https://item.rakuten.co.jp/brandacross/<?php echo $_POST['product-url']; ?>/#syousai" style="display:block;"><img src="https://www.rakuten.ne.jp/gold/brandacross/images/bar/gazou_link.gif?d=2014051900" alt="詳細画像はこちら"></a>
 </div>
 <?php endif; ?>
 <?php endif; ?>
-<?php if($_POST['henpin'] == "on"): ?>
+<?php if($_POST['return'] == "true"): ?>
 <div>
 <a href="https://item.rakuten.co.jp/brandacross/c/0000000196/"><img src="https://image.rakuten.co.jp/brandacross/cabinet/hepin_ok_3.jpg" alt="返品対象商品"></a>
 </div>
@@ -282,12 +282,12 @@ switch ($_POST['joutai']) {
 <img src="https://image.rakuten.co.jp/brandacross/cabinet/hepin_gai_2.jpg" alt="返品対象外">
 </div>
 <?php endif; ?>
-<?php if($_POST['asu'] == "on"): ?>
+<?php if($_POST['add-banner'] == "true"): ?>
 <div>
 <a href="https://event.rakuten.co.jp/asuraku/about/anshin/" target="_blank"><img src="https://image.rakuten.co.jp/brandacross/cabinet/img62570276.jpg" alt="あす楽対応商品"></a>
 </div>
 <?php endif; ?>
-<?php if($_POST['ship'] == "on"): ?>
+<?php if($_POST['business-days'] == "true"): ?>
 <div>
 <img src="https://image.rakuten.co.jp/brandacross/cabinet/shipping.jpg" alt="2～3営業日以内に出荷致します。">
 </div>
@@ -364,11 +364,11 @@ table.tblitemrank tr:nth-child(even) td{
 }
 
 </style>
-<?php if($_POST['asu'] == "on"): ?>
+<?php if($_POST['add-banner'] == "true"): ?>
 <iframe src="https://www.rakuten.ne.jp/gold/brandacross/iframe/shipping_date/index.html" width="352" height="190" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" hspace="0" vspace="0">専用ブラウザでご覧下さい</iframe>
 <?php endif; ?>
 
 
-<?php if($_POST['orico'] == "on"): ?>
+<?php if($_POST['more-than-5'] == "true"): ?>
 <iframe src="https://www.rakuten.ne.jp/gold/brandacross/orico/index.html" width="352" height="290" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" hspace="0" vspace="0">専用ブラウザでご覧下さい</iframe>
 <?php endif; ?>

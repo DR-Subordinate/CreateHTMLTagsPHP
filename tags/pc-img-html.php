@@ -38,19 +38,19 @@ $("#img_01").bind("click", function(e) {
 <div id="galleryBox" class="clearfix">
 
 
-<img id="img_01" src="https://thumbnail.image.rakuten.co.jp/@0_mall/brandacross/cabinet/across<?php echo $_POST['cabi']; ?>/<?php echo $_POST['pictKanri']; ?>_<?php echo $_POST['start'] ; ?>.jpg?_ex=380x380&s=2&r=1" data-zoom-image="https://thumbnail.image.rakuten.co.jp/@0_mall/brandacross/cabinet/across<?php echo $_POST['cabi']; ?>/<?php echo $_POST['pictKanri']; ?>_<?php echo $_POST['start'] ; ?>.jpg"/>
+<img id="img_01" src="https://thumbnail.image.rakuten.co.jp/@0_mall/brandacross/cabinet/across<?php echo $_POST['cabinet-number']; ?>/<?php echo $_POST['img-management-number']; ?>_<?php echo $_POST['start-number'] ; ?>.jpg?_ex=380x380&s=2&r=1" data-zoom-image="https://thumbnail.image.rakuten.co.jp/@0_mall/brandacross/cabinet/across<?php echo $_POST['cabinet-number']; ?>/<?php echo $_POST['img-management-number']; ?>_<?php echo $_POST['start-number'] ; ?>.jpg"/>
 <div id="gal1">
 
 
-<?php if(!empty($_POST['start'])):
+<?php if(!empty($_POST['start-number'])):
 			$j = 1;
 ?>
 <?php
-$end = $_POST['end'] +1;
-$start = $_POST['start'] ;
+$end = $_POST['end-number'] +1;
+$start = $_POST['start-number'] ;
  for($i = $start; $i < $end; $i++): ?>
-<a href="#" data-image="https://thumbnail.image.rakuten.co.jp/@0_mall/brandacross/cabinet/across<?php echo $_POST['cabi']; ?>/<?php echo $_POST['pictKanri']; ?>_<?php echo $i ?>.jpg?_ex=380x380&s=2&r=1" data-zoom-image="https://thumbnail.image.rakuten.co.jp/@0_mall/brandacross/cabinet/across<?php echo $_POST['cabi']; ?>/<?php echo $_POST['pictKanri']; ?>_<?php echo $i ?>.jpg">
-<img id="img_<?php echo $i ?>" src="https://thumbnail.image.rakuten.co.jp/@0_mall/brandacross/cabinet/across<?php echo $_POST['cabi']; ?>/<?php echo $_POST['pictKanri']; ?>_<?php echo $i ?>.jpg?_ex=380x380&s=2&r=1" />
+<a href="#" data-image="https://thumbnail.image.rakuten.co.jp/@0_mall/brandacross/cabinet/across<?php echo $_POST['cabinet-number']; ?>/<?php echo $_POST['img-management-number']; ?>_<?php echo $i ?>.jpg?_ex=380x380&s=2&r=1" data-zoom-image="https://thumbnail.image.rakuten.co.jp/@0_mall/brandacross/cabinet/across<?php echo $_POST['cabinet-number']; ?>/<?php echo $_POST['img-management-number']; ?>_<?php echo $i ?>.jpg">
+<img id="img_<?php echo $i ?>" src="https://thumbnail.image.rakuten.co.jp/@0_mall/brandacross/cabinet/across<?php echo $_POST['cabinet-number']; ?>/<?php echo $_POST['img-management-number']; ?>_<?php echo $i ?>.jpg?_ex=380x380&s=2&r=1" />
 </a>
 
 <?php $j++; ?>

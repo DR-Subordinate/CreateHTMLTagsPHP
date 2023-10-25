@@ -18,14 +18,14 @@
 <div id="galleria">
 
 
-<?php if(!empty($_POST['start'])):
+<?php if(!empty($_POST['start-number'])):
 			$j = 1;
 ?>
 <?php
-$end = $_POST['end'] +1;
-$start = $_POST['start'] ;
+$end = $_POST['end-number'] +1;
+$start = $_POST['start-number'] ;
  for($i = $start; $i < $end; $i++): ?>
-	<img src="https://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabi']; ?>/<?php echo $_POST['pictKanri']; ?>_<?php echo $i ?>.jpg" data-link="https://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabi']; ?>/<?php echo $_POST['pictKanri']; ?>_<?php echo $i ?>.jpg" />
+	<img src="https://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabinet-number']; ?>/<?php echo $_POST['img-management-number']; ?>_<?php echo $i ?>.jpg" data-link="https://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabinet-number']; ?>/<?php echo $_POST['img-management-number']; ?>_<?php echo $i ?>.jpg" />
 <?php $j++; ?>
 <?php endfor; ?>
 <?php endif; ?>
@@ -33,14 +33,14 @@ $start = $_POST['start'] ;
 </div>
 <div style="font-size:12px; line-height:18px; color:#333; margin:0; padding:20px; clear:both;" >
 ■ 商品状態<br>
-<?php if(!empty($_POST['soto'])): ?>
-外側：<?php echo nl2br($_POST['soto']); ?><br>
+<?php if(!empty($_POST['outside'])): ?>
+外側：<?php echo nl2br($_POST['outside']); ?><br>
 <?php endif; ?>
-<?php if(!empty($_POST['uti'])): ?>
-内側：<?php echo nl2br($_POST['uti']); ?><br>
+<?php if(!empty($_POST['inside'])): ?>
+内側：<?php echo nl2br($_POST['inside']); ?><br>
 <?php endif; ?>
-<?php if(!empty($_POST['zen'])): ?>
-特記：<?php echo nl2br($_POST['zen']); ?><br>
+<?php if(!empty($_POST['special-note'])): ?>
+特記：<?php echo nl2br($_POST['special-note']); ?><br>
 <?php endif; ?>
 <?php if(!empty($_POST['syousai'])): ?>
 詳細：<?php echo nl2br($_POST['syousai']); ?><br>

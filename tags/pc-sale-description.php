@@ -1,8 +1,8 @@
 <div id="syousai" style="margin-bottom:60px"></div><br><br><br>
 
-<?php if($_POST['yahooImg'] != "on"): ?>
-<?php if(!empty($_POST['start'])): ?>
-<iframe src="https://www.rakuten.ne.jp/gold/brandacross/item_pict_pc/<?php echo $_POST['bangou']; ?>.html" width="630" height="450" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" hspace="0" vspace="0"></iframe>
+<?php if($_POST['show-yahoo-img'] != "true"): ?>
+<?php if(!empty($_POST['start-number'])): ?>
+<iframe src="https://www.rakuten.ne.jp/gold/brandacross/item_pict_pc/<?php echo $_POST['product-url']; ?>.html" width="630" height="450" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" hspace="0" vspace="0"></iframe>
 <?php endif; ?>
 <?php endif; ?>
 
@@ -49,29 +49,29 @@ border:solid 4px #999999;
 
 
 <?php 
-	switch($_POST['iframeSelect']) {
-	case 1:
+	switch($_POST['product-category']) {
+	case "hermes":
 		$pcCatName = "helmes";
 		break;
-	case 2:
+	case "louis-vuitton":
 		$pcCatName = "lv";
 		break;
-	case 3:
+	case "chanel":
 		$pcCatName = "chanel";
 		break;
-	case 4:
+	case "bag":
 		$pcCatName = "bag";
 		break;
-	case 5:
+	case "wallet":
 		$pcCatName = "wallet";
 		break;
-	case 6:
+	case "jewelry":
 		$pcCatName = "jewelry";
 		break;
-	case 7:
+	case "watch":
 		$pcCatName = "watch";
 		break;
-	case 8:
+	case "none":
 		$pcCatName = "none";
 		break;
 	default:

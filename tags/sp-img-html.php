@@ -8,9 +8,9 @@
 #galleria{height:430px}
 </style>
 <!-- load jQuery -->
-<script src="./js/jquery.js"></script>
+<script src="../dist/jquery.js"></script>
 <!-- load Galleria -->
-<script src="./js/galleria-1.3.6.min.js?121"></script>
+<script src="../dist/galleria-1.3.6.min.js?121"></script>
 </head>
 <body>
 <div style="font-size:14px; color:#333; margin:0; padding:10px 20px;">商品詳細写真</div>

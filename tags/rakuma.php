@@ -1,27 +1,27 @@
-管理番号　<?php echo $_POST['kanri']; ?>
+管理番号　<?php echo $_POST['management-number']; ?>
 
 ブランド　<?php echo $_POST['brand']; ?>
 
-商品名　　<?php echo $_POST['name']; ?>
+商品名　　<?php echo $_POST['product-name']; ?>
 
 <?php if(!empty($_POST['line'])): ?>
 ライン　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['line']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['sozai'])): ?>
+<?php if(!empty($_POST['material'])): ?>
 素　材　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['sozai']); ?>
+　　　　　', $_POST['material']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['kataban'])): ?>
+<?php if(!empty($_POST['model-number'])): ?>
 型　番　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['kataban']); ?>
+　　　　　', $_POST['model-number']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['seizou'])): ?>
+<?php if(!empty($_POST['serial-number'])): ?>
 製造番号　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['seizou']); ?>
+　　　　　', $_POST['serial-number']); ?>
 
 <?php endif; ?>
 <?php if(!empty($_POST['color'])): ?>
@@ -29,9 +29,9 @@
 　　　　　', $_POST['color']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['style'])): ?>
+<?php if(!empty($_POST['shape'])): ?>
 形　状　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['style']); ?>
+　　　　　', $_POST['shape']); ?>
 
 <?php endif; ?>
 <?php if(!empty($_POST['sex'])): ?>
@@ -39,71 +39,71 @@
 　　　　　', $_POST['sex']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['teika'])): ?>
+<?php if(!empty($_POST['price'])): ?>
 参考定価　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['teika']); ?>円
+　　　　　', $_POST['price']); ?>円
 <?php endif; ?>
 <?php if(!empty($_POST['size'])): ?>
 サイズ　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['size']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['omosa'])): ?>
+<?php if(!empty($_POST['weight'])): ?>
 重　量　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['omosa']); ?>
+　　　　　', $_POST['weight']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['kinou'])): ?>
+<?php if(!empty($_POST['feature'])): ?>
 機　能　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['kinou']); ?>
+　　　　　', $_POST['feature']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['syuunou'])): ?>
+<?php if(!empty($_POST['containable-item'])): ?>
 収納可能アイテム　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['syuunou']); ?>
+　　　　　', $_POST['containable-item']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['huzoku'])): ?>
+<?php if(!empty($_POST['accessory'])): ?>
 付属品　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['huzoku']); ?>
+　　　　　', $_POST['accessory']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['soto'])): ?>
+<?php if(!empty($_POST['outside'])): ?>
 外　側　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['soto']); ?>
+　　　　　', $_POST['outside']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['uti'])): ?>
+<?php if(!empty($_POST['inside'])): ?>
 内　側　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['uti']); ?>
+　　　　　', $_POST['inside']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['zen'])): ?>
+<?php if(!empty($_POST['special-note'])): ?>
 特　記　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['zen']); ?>
+　　　　　', $_POST['special-note']); ?>
 
 <?php endif; ?>
 <?php if(!empty($_POST['syousai'])): ?>
 詳　細　　<?php echo $_POST['syousai']; ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['free'])): ?>
-<?php echo $_POST['freetitle']; ?>　<?php echo $_POST['free']; ?>
+<?php if(!empty($_POST['free-text-content'])): ?>
+<?php echo $_POST['free-text']; ?>　<?php echo $_POST['free-text-content']; ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['freetitle2'])): ?>
-<?php echo $_POST['freetitle2']; ?>　<?php echo $_POST['free2']; ?>
+<?php if(!empty($_POST['free-text-2'])): ?>
+<?php echo $_POST['free-text-2']; ?>　<?php echo $_POST['free-text-content-2']; ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['freetitle3'])): ?>
-<?php echo $_POST['freetitle3']; ?>　<?php echo $_POST['free3']; ?>
+<?php if(!empty($_POST['free-text-3'])): ?>
+<?php echo $_POST['free-text-3']; ?>　<?php echo $_POST['free-text-content-3']; ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['joutai'])): ?>
-商品ランク　　<?php echo $_POST['joutai']; ?>　　<?php endif; ?>
+<?php if(!empty($_POST['condition'])): ?>
+商品ランク　　<?php echo $_POST['condition']; ?>　　<?php endif; ?>
 <?php 
 
-switch ($_POST['joutai']) {
+switch ($_POST['condition']) {
     case "N":
         echo "（新品、未使用品  製造から2年以内の商品）";
         break;
@@ -135,15 +135,15 @@ switch ($_POST['joutai']) {
 ?>
 
 
-<?php if(!empty($_POST['staff'])): ?>
+<?php if(!empty($_POST['staff-comment'])): ?>
 スタッフコメント
-<?php echo $_POST['staff']; ?>
+<?php echo $_POST['staff-comment']; ?>
 
 <?php endif; ?>
 付属品について
 写真に掲載のないもの、商品説明に表記されている付属品以外は付属しておりません。
 商品説明・写真にてご確認の上、ご不明点がございましたらお気軽にお問い合わせ下さいませ。
 
-<?php if(!empty($_POST['kanren'])): ?>
-関連ワード　<?php echo $_POST['kanren']; ?>
+<?php if(!empty($_POST['related-word'])): ?>
+関連ワード　<?php echo $_POST['related-word']; ?>
 <?php endif; ?>

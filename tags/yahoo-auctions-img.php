@@ -14,12 +14,12 @@
 <!--↓ href="" と src=""に画像URLを入力　※行をコピーすればいくつでも追加可能 ↓-->
 
 <?php
-$end = $_POST['end'] +2;
+$end = $_POST['end-number'] +2;
  for($i = 1; $i < $end; $i++): ?>
 	<?php if($i==1): ?>
-	<a href="http://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabi']; ?>/<?php echo $_POST['pictKanri']; ?>.jpg" target="_blank"><img src="http://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabi']; ?>/<?php echo $_POST['pictKanri']; ?>.jpg" width="100" height="100"></a>
+	<a href="http://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabinet-number']; ?>/<?php echo $_POST['img-management-number']; ?>.jpg" target="_blank"><img src="http://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabinet-number']; ?>/<?php echo $_POST['img-management-number']; ?>.jpg" width="100" height="100"></a>
 	<?php else: ?>
-	<a href="http://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabi']; ?>/<?php echo $_POST['pictKanri']; ?>_<?php echo $i-1 ?>.jpg" target="_blank"><img src="http://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabi']; ?>/<?php echo $_POST['pictKanri']; ?>_<?php echo $i-1 ?>.jpg" width="100" height="100"></a>
+	<a href="http://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabinet-number']; ?>/<?php echo $_POST['img-management-number']; ?>_<?php echo $i-1 ?>.jpg" target="_blank"><img src="http://image.rakuten.co.jp/brandacross/cabinet/across<?php echo $_POST['cabinet-number']; ?>/<?php echo $_POST['img-management-number']; ?>_<?php echo $i-1 ?>.jpg" width="100" height="100"></a>
 	<?php endif; ?>
 <?php endfor; ?>
 

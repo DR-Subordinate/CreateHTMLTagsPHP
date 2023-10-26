@@ -2,9 +2,9 @@
 <CENTER>
 <img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr001/snavi0/ez4ai2mjspd322phnvvsooaa5m/2095788396.jpg" width="800">
 </CENTER>
-<?php if(!empty($_POST['imageurl'])): ?>
+<?php if(!empty($_POST['img-url'])): ?>
 <BR><BR><CENTER>
-<a href="https://brandacross.xsrv.jp/syousaigazou/<?php echo $_POST['imageurl']; ?>.html">
+<a href="https://brandacross.xsrv.jp/syousaigazou/<?php echo $_POST['img-url']; ?>.html">
 <font size="6">
 <img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr001/snavi0/ez4ai2mjspd322phnvvsooaa5m/2095788753.jpg" border="0">
 </font>
@@ -12,10 +12,10 @@
 </CENTER>
 <?php endif; ?>
 <BR>
-<?php if(!empty($_POST['dougaurl'])): ?>
+<?php if(!empty($_POST['video-url'])): ?>
 <CENTER>
 <font size="6">
-<a href="<?php echo $_POST['dougaurl']; ?>">
+<a href="<?php echo $_POST['video-url']; ?>">
 <img src="https://image.rakuten.co.jp/brandacross/cabinet/youtube.jpg" border="0">
 </a>
 </font>
@@ -37,7 +37,7 @@
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo $_POST['kanri']; ?>
+<?php echo $_POST['management-number']; ?>
 </font>
 </TD>
 </TR>
@@ -57,7 +57,7 @@
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo $_POST['name']; ?>
+<?php echo $_POST['product-name']; ?>
 </font>
 </TD>
 </TR>
@@ -75,38 +75,38 @@
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['sozai'])): ?>
+<?php if(!empty($_POST['material'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">素材</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['sozai']); ?>
+<?php echo nl2br($_POST['material']); ?>
 </font>
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['kataban'])): ?>
+<?php if(!empty($_POST['model-number'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">型　番</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['kataban']); ?>
+<?php echo nl2br($_POST['model-number']); ?>
 </font>
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['seizou'])): ?>
+<?php if(!empty($_POST['serial-number'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">製造番号</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['seizou']); ?>
+<?php echo nl2br($_POST['serial-number']); ?>
 </font>
 </TD>
 </TR>
@@ -123,14 +123,14 @@
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['teika'])): ?>
+<?php if(!empty($_POST['price'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">定　価</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo $_POST['teika']; ?>円</font>
+<?php echo $_POST['price']; ?>円</font>
 </TD>
 </TR>
 <?php endif; ?>
@@ -153,81 +153,81 @@
 <TD BGCOLOR=#ffffff>
 <font size="3">
 <?php echo nl2br($_POST['size']); ?><br>
-<?php if($_POST['yubiwa'] == "on"): ?>
+<?php if($_POST['change-ring-size'] == "true"): ?>
 <a href="https://image.rakuten.co.jp/brandacross/cabinet/150714_ring2.jpg"><font size="2">サイズ直し1サイズ無料詳しくはこちら</font></a>
 <?php endif; ?>
 </font>
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['omosa'])): ?>
+<?php if(!empty($_POST['weight'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">重量</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['omosa']); ?>
+<?php echo nl2br($_POST['weight']); ?>
 </font>
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['kinou'])): ?>
+<?php if(!empty($_POST['feature'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">機　能</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['kinou']); ?>
+<?php echo nl2br($_POST['feature']); ?>
 </font>
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['huzoku'])): ?>
+<?php if(!empty($_POST['accessory'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">付属品</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['huzoku']); ?>
+<?php echo nl2br($_POST['accessory']); ?>
 </font>
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['soto'])): ?>
+<?php if(!empty($_POST['outside'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">外　側</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['soto']); ?>
+<?php echo nl2br($_POST['outside']); ?>
 </font>
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['uti'])): ?>
+<?php if(!empty($_POST['inside'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">内　側</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['uti']); ?>
+<?php echo nl2br($_POST['inside']); ?>
 </font>
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['zen'])): ?>
+<?php if(!empty($_POST['special-note'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">全　体</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['zen']); ?>
+<?php echo nl2br($_POST['special-note']); ?>
 </font>
 </TD>
 </TR>
@@ -244,7 +244,7 @@
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['staff'])): ?>
+<?php if(!empty($_POST['staff-comment'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">スタッフコメント
@@ -252,50 +252,50 @@
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['staff']); ?>
+<?php echo nl2br($_POST['staff-comment']); ?>
 </font>
 </TD>
 </TR>
 <?php endif; ?>
 
-<?php if(!empty($_POST['free'])): ?>
+<?php if(!empty($_POST['free-text-content'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">
-<?php echo $_POST['freetitle']; ?>
+<?php echo $_POST['free-text']; ?>
 </font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['free']); ?>
+<?php echo nl2br($_POST['free-text-content']); ?>
 </font>
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['free2'])): ?>
+<?php if(!empty($_POST['free-text-content-2'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">
-<?php echo $_POST['freetitle2']; ?>
+<?php echo $_POST['free-text-2']; ?>
 </font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo $_POST['free2']; ?>
+<?php echo $_POST['free-text-content-2']; ?>
 </font>
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['free3'])): ?>
+<?php if(!empty($_POST['free-text-content-3'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">
-<?php echo $_POST['freetitle3']; ?>
+<?php echo $_POST['free-text-3']; ?>
 </font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo $_POST['free3']; ?>
+<?php echo $_POST['free-text-content-3']; ?>
 </font>
 </TD>
 </TR>
@@ -335,7 +335,7 @@
 <TD ALIGN=center BGCOLOR=#ffffff WIDTH=10%>
 <B>
 <FONT SIZE="7" color="#ff0000">
-<?php echo $_POST['joutai']; ?>
+<?php echo $_POST['condition']; ?>
 </font>
 </B>
 </TD>

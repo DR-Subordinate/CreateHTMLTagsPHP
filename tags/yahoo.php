@@ -223,7 +223,7 @@
 <?php if(!empty($_POST['special-note'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
-<font size="3">全　体</font>
+<font size="3">特　記</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">

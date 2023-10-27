@@ -1,5 +1,4 @@
 <?php if(!empty($_POST['img-url'])): ?>
-<BR><BR><CENTER>
 <a href="https://shopping.yahoo.co.jp/stores/wrap/bouncer.html?dest_path=https://brandacross.xsrv.jp/syousaigazou/<?php echo $_POST['img-url']; ?>.html" target="_blank">
 <font size="6">
 <img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr001/snavi0/ez4ai2mjspd322phnvvsooaa5m/2095788753.jpg" border="0" width="100%"></a>
@@ -293,5 +292,3 @@ switch ($_POST['condition']) {
 <p>●ご注意●</p>
 <p>※撮影は忠実な再現を心がけておりますが、モニターの発色具合によって実際のものと色が異なる場合がございます。</p>
 <p>※店舗や他サイトでも平行して販売しております。在庫確認後のメールをもって、契約成立となります事をご了承ください。</p>
-
-</CENTER>

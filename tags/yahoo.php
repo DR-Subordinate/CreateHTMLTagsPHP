@@ -5,20 +5,16 @@
 <?php if(!empty($_POST['img-url'])): ?>
 <br><br><center>
 <a href="https://brandacross.xsrv.jp/syousaigazou/<?php echo $_POST['img-url']; ?>.html">
-<font size="6">
 <img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr001/snavi0/ez4ai2mjspd322phnvvsooaa5m/2095788753.jpg" border="0">
-</font>
 </a>
 </center>
 <?php endif; ?>
 <br>
 <?php if(!empty($_POST['video-url'])): ?>
 <center>
-<font size="6">
 <a href="<?php echo $_POST['video-url']; ?>">
 <img src="https://image.rakuten.co.jp/brandacross/cabinet/youtube.jpg" border="0">
 </a>
-</font>
 </center>
 <?php endif; ?>
 <br>

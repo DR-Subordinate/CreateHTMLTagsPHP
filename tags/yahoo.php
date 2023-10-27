@@ -1,28 +1,28 @@
 <p>
-<CENTER>
+<center>
 <img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr001/snavi0/ez4ai2mjspd322phnvvsooaa5m/2095788396.jpg" width="800">
-</CENTER>
+</center>
 <?php if(!empty($_POST['img-url'])): ?>
-<BR><BR><CENTER>
+<br><br><center>
 <a href="https://brandacross.xsrv.jp/syousaigazou/<?php echo $_POST['img-url']; ?>.html">
 <font size="6">
 <img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr001/snavi0/ez4ai2mjspd322phnvvsooaa5m/2095788753.jpg" border="0">
 </font>
 </a>
-</CENTER>
+</center>
 <?php endif; ?>
-<BR>
+<br>
 <?php if(!empty($_POST['video-url'])): ?>
-<CENTER>
+<center>
 <font size="6">
 <a href="<?php echo $_POST['video-url']; ?>">
 <img src="https://image.rakuten.co.jp/brandacross/cabinet/youtube.jpg" border="0">
 </a>
 </font>
-</CENTER>
+</center>
 <?php endif; ?>
-<BR>
-<CENTER>
+<br>
+<center>
 <TABLE WIDTH=800 BGCOLOR=#888888 CELLSPACING=1 CELLPADDING=5>
 <TR>
 <TD BGCOLOR=#dddddd COLSPAN=4 ALIGN=center>
@@ -314,10 +314,10 @@
 
 
 </TABLE>
-</CENTER>
+</center>
 <br>
 <br>
-<CENTER>
+<center>
 <TABLE WIDTH=800 BGCOLOR=#000000 CELLSPACING=1 CELLPADDING=5>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=10%>
@@ -347,8 +347,8 @@
 </tr>
 </TABLE>
 </center>
-<BR>
-<BR>
+<br>
+<br>
 <center>
 <table border="0" cellpadding="10" width="800">
 <tr>
@@ -385,7 +385,7 @@
 <center>
 <img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr001/snavi0/ez4ai2mjspd322phnvvsooaa5m/2095788397.jpg" width="800">
 </center>
-<BR>
-<BR>
-</CENTER>
+<br>
+<br>
+</center>
 </p>

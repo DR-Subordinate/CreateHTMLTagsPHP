@@ -10,7 +10,7 @@
 <?php endif; ?>
 		
 <img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_1.jpg" alt="Itemspec" style="vertical-align: bottom" width="80%">
-<table style="width:350px;border-collapse:collapse;">
+<table style="width:80%;border-collapse:collapse;">
 
 <tr>
 <th width="25%" bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;border:#dddddd solid 1px;">管理番号</th>
@@ -193,7 +193,7 @@
 <br />
 <img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_2.jpg" alt="商品ランク" style="vertical-align: bottom" width="350">
 <br />
-<table width="350" bgcolor="#dddddd" cellspacing="1" cellpadding="10" style="border-collapse:collapse;">
+<table width="80%" bgcolor="#dddddd" cellspacing="1" cellpadding="10" style="border-collapse:collapse;">
 <tr>
 	<th width="25%" bgcolor="#EBE8D7" style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;text-align:center;border:#dddddd solid 1px;" ><?php echo $_POST['condition']; ?></th>
 	<td width="75%" bgcolor="#FFFFFF" style="border:#dddddd solid 1px;">
@@ -254,7 +254,7 @@ switch ($_POST['condition']) {
 <?php endif; ?>
 </table>
 <br>
-<table id="rankDesc" style="width:350px;border-collapse:collapse;" >
+<table id="rankDesc" style="width:80%;border-collapse:collapse;" >
 	<tr>
 		<th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >N</th>
 		<th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >NS</th>

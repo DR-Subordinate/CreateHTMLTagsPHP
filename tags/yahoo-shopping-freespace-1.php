@@ -196,7 +196,7 @@
 <table width="80%" bgcolor="#dddddd" cellspacing="1" cellpadding="10" style="border-collapse:collapse;">
 <tr>
 	<th width="25%" bgcolor="#EBE8D7" style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;text-align:center;border:#dddddd solid 1px;" ><?php echo $_POST['condition']; ?></th>
-	<td width="75%" bgcolor="#FFFFFF" style="border:#dddddd solid 1px;">
+	<td width="75%" bgcolor="#FFFFFF" style="border:#dddddd solid 1px; vertical-align: middle;">
 <?php 
 switch ($_POST['condition']) {
     case "N":

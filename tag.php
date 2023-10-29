@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/output.css" rel="stylesheet">
+    <style>
+      .ms-gothic {
+        font-family: "MS Gothic", "ＭＳ ゴシック", "Yu Gothic", "Meiryo", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <div class="grid grid-cols-1 md:grid-cols-2 mt-6 m-3">
@@ -38,7 +43,7 @@
 
       <section class="lg:mx-auto mt-6">
         <h1 class="font-bold">ラクマ公式用タグ</h1>
-        <textarea name="rakuma" cols="48" rows="8" class="border border-black"><?php include('tags/rakuma.php'); ?></textarea>
+        <textarea name="rakuma" cols="48" rows="8" class="border border-black ms-gothic"><?php include('tags/rakuma.php'); ?></textarea>
       </section>
 
       <section class="lg:mx-auto mt-6">

@@ -10,7 +10,7 @@
 <?php endif; ?>
 		
 <img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_1.jpg" alt="Itemspec" style="vertical-align: bottom" width="80%">
-<table style="width:80%;border-collapse:collapse;">
+<table width="80%" bgcolor="#dddddd" cellspacing="1" cellpadding="10" style="border-collapse:collapse;">
 
 <tr>
 <th width="25%" bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;border:#dddddd solid 1px;">管理番号</th>

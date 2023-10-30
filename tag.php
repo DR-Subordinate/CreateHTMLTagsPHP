@@ -68,7 +68,7 @@
 
       <section class="lg:mx-auto mt-6">
         <h1 class="font-bold">BUYMA用</h1>
-        <textarea name="buyma" cols="48" rows="8" class="border border-black"><?php include('tags/buyma.php'); ?></textarea>
+        <textarea name="buyma" cols="48" rows="8" class="border border-black ms-gothic"><?php include('tags/buyma.php'); ?></textarea>
       </section>
 
       <section class="lg:mx-auto mt-6">

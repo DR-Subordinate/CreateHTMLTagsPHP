@@ -230,19 +230,19 @@ switch ($_POST['condition']) {
  ?></td></tr>
 <?php if(!empty($_POST['outside'])): ?>
 <tr>
-<th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7;">外側</th>
+<th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7; vertical-align: middle;">外側</th>
 <td style="border:#dddddd solid 1px;"><?php echo nl2br($_POST['outside']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['inside'])): ?>
 <tr>
-<th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7;">内側</th>
+<th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7; vertical-align: middle;">内側</th>
 <td style="border:#dddddd solid 1px;"><?php echo nl2br($_POST['inside']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['special-note'])): ?>
 <tr>
-<th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7;">特記</th>
+<th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7; vertical-align: middle;">特記</th>
 <td style="border:#dddddd solid 1px;"><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>

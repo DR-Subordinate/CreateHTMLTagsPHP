@@ -196,7 +196,7 @@
 <table width="80%" cellspacing="1" cellpadding="10" style="border-collapse:collapse;">
 <tr>
 	<th width="25%" bgcolor="#EBE8D7" style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;text-align:center;border:#dddddd solid 1px;" ><?php echo $_POST['condition']; ?></th>
-	<td width="75%" bgcolor="#FFFFFF" style="border:#dddddd solid 1px; vertical-align: middle;">
+	<td width="75%" bgcolor="#FFFFFF" style="border:#dddddd solid 1px; vertical-align: middle; padding: 8px;">
 <?php 
 switch ($_POST['condition']) {
     case "N":
@@ -231,19 +231,19 @@ switch ($_POST['condition']) {
 <?php if(!empty($_POST['outside'])): ?>
 <tr>
 <th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7; vertical-align: middle;">外側</th>
-<td style="border:#dddddd solid 1px;"><?php echo nl2br($_POST['outside']); ?></td>
+<td style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['outside']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['inside'])): ?>
 <tr>
 <th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7; vertical-align: middle;">内側</th>
-<td style="border:#dddddd solid 1px;"><?php echo nl2br($_POST['inside']); ?></td>
+<td style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['inside']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['special-note'])): ?>
 <tr>
 <th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7; vertical-align: middle;">特記</th>
-<td style="border:#dddddd solid 1px;"><?php echo nl2br($_POST['special-note']); ?></td>
+<td style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['syousai'])): ?>

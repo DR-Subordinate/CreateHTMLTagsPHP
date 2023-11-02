@@ -193,7 +193,7 @@
 <br />
 <img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_2.jpg" alt="商品ランク" style="vertical-align: bottom" width="80%">
 <br />
-<table width="80%" bgcolor="#dddddd" cellspacing="1" cellpadding="10" style="border-collapse:collapse;">
+<table width="80%" cellspacing="1" cellpadding="10" style="border-collapse:collapse;">
 <tr>
 	<th width="25%" bgcolor="#EBE8D7" style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;text-align:center;border:#dddddd solid 1px;" ><?php echo $_POST['condition']; ?></th>
 	<td width="75%" bgcolor="#FFFFFF" style="border:#dddddd solid 1px; vertical-align: middle;">
@@ -230,19 +230,19 @@ switch ($_POST['condition']) {
  ?></td></tr>
 <?php if(!empty($_POST['outside'])): ?>
 <tr>
-<th style="text-align:center;border:#dddddd solid 1px;">外側</th>
+<th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7;">外側</th>
 <td style="border:#dddddd solid 1px;"><?php echo nl2br($_POST['outside']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['inside'])): ?>
 <tr>
-<th style="text-align:center;border:#dddddd solid 1px;">内側</th>
+<th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7;">内側</th>
 <td style="border:#dddddd solid 1px;"><?php echo nl2br($_POST['inside']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['special-note'])): ?>
 <tr>
-<th style="text-align:center;border:#dddddd solid 1px;">特記</th>
+<th style="text-align:center;border:#dddddd solid 1px; background-color:#EBE8D7;">特記</th>
 <td style="border:#dddddd solid 1px;"><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>

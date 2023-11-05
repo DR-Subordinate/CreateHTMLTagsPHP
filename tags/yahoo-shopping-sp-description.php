@@ -198,8 +198,8 @@
 <br />
 <table class="tblitemrank">
 <tr>
-	<th style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;" ><?php echo $_POST['condition']; ?></th>
-	<td>
+	<th style="font-size:24px;font-weight:bold;color:#bf0000;width:80px; text-align:center;border:#dddddd solid 1px;" ><?php echo $_POST['condition']; ?></th>
+	<td style="border:#dddddd solid 1px; vertical-align: middle; padding: 8px;">
 <?php 
 switch ($_POST['condition']) {
     case "N":
@@ -233,20 +233,20 @@ switch ($_POST['condition']) {
  ?></td></tr>
 <?php if(!empty($_POST['outside'])): ?>
 <tr>
-<th>外側</th>
-<td><?php echo nl2br($_POST['outside']); ?></td>
+<th style="text-align:center;border:#dddddd solid 1px; vertical-align: middle;">外側</th>
+<td style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['outside']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['inside'])): ?>
 <tr>
-<th>内側</th>
-<td><?php echo nl2br($_POST['inside']); ?></td>
+<th style="text-align:center;border:#dddddd solid 1px; vertical-align: middle;">内側</th>
+<td style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['inside']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['special-note'])): ?>
 <tr>
-<th>特記</th>
-<td><?php echo nl2br($_POST['special-note']); ?></td>
+<th style="text-align:center;border:#dddddd solid 1px; vertical-align: middle;">特記</th>
+<td style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['syousai'])): ?>

@@ -196,7 +196,7 @@
 <br />
 <img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_2.jpg" alt="商品ランク" width="100%">
 <br />
-<table class="tblitemrank">
+<table class="tblitemrank" style="border-collapse:collapse;">
 <tr>
 	<th bgcolor="#EBE8D7" style="font-size:24px;font-weight:bold;color:#bf0000;width:80px; text-align:center;border:#dddddd solid 1px;" ><?php echo $_POST['condition']; ?></th>
 	<td style="border:#dddddd solid 1px; vertical-align: middle; padding: 8px;">

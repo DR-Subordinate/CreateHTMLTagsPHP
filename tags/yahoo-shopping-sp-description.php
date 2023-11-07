@@ -196,10 +196,10 @@
 <br />
 <img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_2.jpg" alt="商品ランク" width="100%">
 <br />
-<table class="tblitemrank" style="border-collapse:collapse;">
+<table class="tblitemrank" width="100%" style="border-collapse:collapse;">
 <tr>
-	<th bgcolor="#EBE8D7" style="font-size:24px;font-weight:bold;color:#bf0000;width:80px; text-align:center;border:#dddddd solid 1px;" ><?php echo $_POST['condition']; ?></th>
-	<td style="border:#dddddd solid 1px; vertical-align: middle; padding: 8px;">
+	<th bgcolor="#EBE8D7" width="20%" style="font-size:24px;font-weight:bold;color:#bf0000; padding:8px; text-align:center;border:#dddddd solid 1px;" ><?php echo $_POST['condition']; ?></th>
+	<td bgcolor="#ffffff" width="80%" style="border:#dddddd solid 1px; vertical-align: middle; padding: 8px;">
 <?php 
 switch ($_POST['condition']) {
     case "N":
@@ -233,20 +233,20 @@ switch ($_POST['condition']) {
  ?></td></tr>
 <?php if(!empty($_POST['outside'])): ?>
 <tr>
-<th bgcolor="#EBE8D7" style="text-align:center;border:#dddddd solid 1px; vertical-align: middle;">外側</th>
-<td style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['outside']); ?></td>
+<th bgcolor="#EBE8D7" width="20%" style="text-align:center;border:#dddddd solid 1px; vertical-align: middle; padding:8px;">外側</th>
+<td bgcolor="#ffffff" width="80%" style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['outside']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['inside'])): ?>
 <tr>
-<th bgcolor="#EBE8D7" style="text-align:center;border:#dddddd solid 1px; vertical-align: middle;">内側</th>
-<td style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['inside']); ?></td>
+<th bgcolor="#EBE8D7" width="20%" style="text-align:center;border:#dddddd solid 1px; vertical-align: middle; padding:8px;">内側</th>
+<td bgcolor="#ffffff" width="80%" style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['inside']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['special-note'])): ?>
 <tr>
-<th bgcolor="#EBE8D7" style="text-align:center;border:#dddddd solid 1px; vertical-align: middle;">特記</th>
-<td style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['special-note']); ?></td>
+<th bgcolor="#EBE8D7" width="20%" style="text-align:center;border:#dddddd solid 1px; vertical-align: middle; padding:8px;">特記</th>
+<td bgcolor="#ffffff" width="80%" style="border:#dddddd solid 1px; padding: 8px;"><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['syousai'])): ?>

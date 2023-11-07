@@ -10,127 +10,127 @@
 <?php endif; ?>
 		
 <img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_1.jpg" alt="Itemspec" style="vertical-align: bottom" width="100%">
-<table cellspacing="1" cellpadding="8" border="0" width="100%">
+<table width="100%" style="border-collapse:collapse;">
 
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;border:#dddddd solid 1px;">管理番号</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo $_POST['management-number']; ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;border:#dddddd solid 1px;">管理番号</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo $_POST['management-number']; ?></td>
 </tr>
 
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">ブランド</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo $_POST['brand']; ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">ブランド</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo $_POST['brand']; ?></td>
 </tr>
 
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">商品名</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo $_POST['product-name']; ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">商品名</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo $_POST['product-name']; ?></td>
 </tr>
 
 <?php if(!empty($_POST['line'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">ライン</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['line']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">ライン</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['line']); ?></td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['material'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">素材</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['material']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">素材</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['material']); ?></td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['model-number'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">型番</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['model-number']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">型番</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['model-number']); ?></td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['serial-number'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">製造番号</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['serial-number']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">製造番号</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['serial-number']); ?></td>
 </tr>
 <?php endif; ?>
 	
 <?php if($_POST['show-country-of-manufacture'] == "true"): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">製造国</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;">フランス・スペイン・イタリアのいずれか<br>(※まれにUSAもございます)</td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">製造国</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;">フランス・スペイン・イタリアのいずれか<br>(※まれにUSAもございます)</td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['color'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">カラー</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['color']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">カラー</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['color']); ?></td>
 </tr>
 <?php endif; ?>
 	
 <?php if($_POST['show-hermes-color-description'] == "true"): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">カラーに関して</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;">エルメスのカラーに関して、実際の色味を表現出来ますよう、撮影・加工に尽力しておりますが、ご覧頂く環境によって異なる場合がございます。 必ずご希望のカラー名の確認をお願い致します。</td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">カラーに関して</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;">エルメスのカラーに関して、実際の色味を表現出来ますよう、撮影・加工に尽力しておりますが、ご覧頂く環境によって異なる場合がございます。 必ずご希望のカラー名の確認をお願い致します。</td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['shape'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">形状</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['shape']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">形状</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['shape']); ?></td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['sex'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">性別</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['sex']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">性別</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['sex']); ?></td>
 </tr>
 <?php endif; ?>
 
 
 <?php if(!empty($_POST['price'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">参考定価</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['price']); ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">参考定価</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['price']); ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['size'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">サイズ</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['size']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">サイズ</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['size']); ?></td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['weight'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">重量</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['weight']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">重量</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['weight']); ?></td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['feature'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">機能</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['feature']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">機能</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['feature']); ?></td>
 </tr>
 <?php endif; ?>
 	
 <?php if(!empty($_POST['containable-item'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">収納可能アイテム</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['containable-item']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">収納可能アイテム</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['containable-item']); ?></td>
 </tr>
 <?php endif; ?>
 
 
 <?php if(!empty($_POST['accessory'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">付属品</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['accessory']); ?>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">付属品</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['accessory']); ?>
 <?php if($_POST['add-top'] == "true"): ?>
 <br>※チェーンは付属致しません。<br>
 <?php endif; ?>
@@ -154,36 +154,36 @@
 
 <?php if(!empty($_POST['staff-comment'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">スタッフコメント</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['staff-comment']); ?>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">スタッフコメント</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['staff-comment']); ?>
 </td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['free-text-content'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;"><?php echo $_POST['free-text']; ?></th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['free-text-content']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;"><?php echo $_POST['free-text']; ?></th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['free-text-content']); ?></td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['free-text-content-2'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;"><?php echo $_POST['free-text-2']; ?></th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['free-text-content-2']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;"><?php echo $_POST['free-text-2']; ?></th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['free-text-content-2']); ?></td>
 </tr>
 <?php endif; ?>
 
 <?php if(!empty($_POST['free-text-content-3'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;"><?php echo $_POST['free-text-3']; ?></th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['free-text-content-3']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;"><?php echo $_POST['free-text-3']; ?></th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['free-text-content-3']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['accessory'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">付属品について</th>
-<td width="80%" bgcolor="#ffffff" align="left" style="padding:8px; border:#dddddd solid 1px;">写真に掲載のないもの、商品説明に表記されている付属品以外は付属しておりません。<br>商品説明・写真にてご確認の上、ご不明点がございましたらお気軽にお問い合わせ下さいませ。<br>
+<th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">付属品について</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;">写真に掲載のないもの、商品説明に表記されている付属品以外は付属しておりません。<br>商品説明・写真にてご確認の上、ご不明点がございましたらお気軽にお問い合わせ下さいませ。<br>
 </td>
 </tr>
 

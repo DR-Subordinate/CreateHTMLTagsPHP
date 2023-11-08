@@ -1,7 +1,6 @@
 <?php if(!empty($_POST['img-url'])): ?>
 <a href="https://shopping.yahoo.co.jp/stores/wrap/bouncer.html?dest_path=https://brandacross.xsrv.jp/syousaigazou/<?php echo $_POST['img-url']; ?>.html" target="_blank" style="margin-bottom: 20px; display: block;">
 <img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr001/snavi0/ez4ai2mjspd322phnvvsooaa5m/2095788753.jpg" border="0" width="100%"></a>
-</a>
 <br>
 <?php endif; ?>
 <?php if($_POST['add-wrapping-banner'] == "true"): ?>
@@ -156,8 +155,6 @@
 <tr>
 <th width="20%" bgcolor="#EBE8D7" style="text-align: left; padding:8px; border:#dddddd solid 1px; vertical-align: middle;">付属品について</th>
 <td width="80%" bgcolor="#ffffff" style="padding:8px; border:#dddddd solid 1px;">写真に掲載のないもの、商品説明に表記されている付属品以外は付属しておりません。<br>商品説明・写真にてご確認の上、ご不明点がございましたらお気軽にお問い合わせ下さいませ。<br>
-</td>
-</tr>
 </td>
 </tr>
 <?php endif; ?>

@@ -191,7 +191,6 @@
  <br>
 <br />
 <img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_2.jpg" alt="商品ランク" style="vertical-align: bottom" width="80%">
-<br />
 <table width="80%" cellspacing="1" cellpadding="10" style="border-collapse:collapse;">
 <tr>
 	<th width="25%" bgcolor="#EBE8D7" style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;text-align:center;border:#dddddd solid 1px;" ><?php echo $_POST['condition']; ?></th>

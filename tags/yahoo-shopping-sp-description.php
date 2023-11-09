@@ -259,3 +259,11 @@ switch ($_POST['condition']) {
 <tr><td>※撮影は忠実な再現を心がけておりますが、モニターの発色具合によって実際のものと色が異なる場合がございます。<br>
 ※店舗や他サイトでも平行して販売しております。在庫確認後のメールをもって、契約成立となります事をご了承ください。</td></tr>
 </table>
+<br><br>
+<table style="width:100%">
+<tr><th width="50%" style="padding:3px;"><a href="https://store.shopping.yahoo.co.jp/brand-across/wrapping.html"><img src="https://shopping.c.yimg.jp/lib/brand-across/raping.jpg" width="100%" alt="ギフト"></a></th>
+<td width="50%" style="padding:3px;"><a href="https://store.shopping.yahoo.co.jp/brand-across/orico.html"><img src="https://shopping.c.yimg.jp/lib/brand-across/orico_tittle.jpg" width="100%" alt="オリコ"></a></td></tr>
+<tr><th width="50%" style="padding:3px;"><a href="https://store.shopping.yahoo.co.jp/brand-across/question.html"><img src="https://shopping.c.yimg.jp/lib/brand-across/question_pc_img.jpg" width="100%" alt="Q&A"></a></th>
+<td width="50%" style="padding:3px;"><a href="https://store.shopping.yahoo.co.jp/brand-across/size-guide.html"><img src="https://shopping.c.yimg.jp/lib/brand-across/sizeguide_pc_img.jpg" width="100%" alt="サイズガイド"></a></td></tr>
+</table><br>
+<img src="https://shopping.c.yimg.jp/lib/brand-across/yahoo_tenpo.jpg" width="100%">

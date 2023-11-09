@@ -161,7 +161,7 @@
 </table>
 <br>
 <br>
-<img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_2.jpg" alt="商品ランク" width="100%">
+<img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_2.jpg" style="vertical-align: bottom" alt="商品ランク" width="100%">
 <br>
 <table class="tblitemrank" width="100%" style="border-collapse:collapse;">
 <tr>

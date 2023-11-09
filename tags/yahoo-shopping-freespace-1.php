@@ -252,28 +252,28 @@ switch ($_POST['condition']) {
 <?php endif; ?>
 </table>
 <br>
-<table id="rankDesc" style="width:80%;border-collapse:collapse;" >
-	<tr>
-		<th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >N</th>
-		<th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >NS</th>
-		<th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >S</th>
-		<th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >A</th>
-		<th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >AB</th>
-		<th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >B</th>
-		<th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >BC</th>
-		<th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >C</th>
-		<th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >J</th>
-	</tr>
-	<tr>
-		<td<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">新<br>品</td>
-		<td<?php if($_POST['condition'] == "NS"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">未<br>使<br>用<br>品</td>
-		<td<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">新<br>品<br>同<br>様<br>品</td>
-		<td<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">中<br>古<br>超<br>美<br>品</td>
-		<td<?php if($_POST['condition'] == "AB"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">中<br>古<br>美<br>品</td>
-		<td<?php if($_POST['condition'] == "B"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">中<br>古<br>良<br>品</td>
-		<td<?php if($_POST['condition'] == "BC"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">強<br>い<br>使<br>用<br>感</td>
-		<td<?php if($_POST['condition'] == "C"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">破<br>損<br>有</td>
-		<td<?php if($_POST['condition'] == "J"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">要<br>修<br>理</td>
-	</tr>
+<table width="80%" id="rankDesc" bgcolor="#dddddd" cellspacing="1" cellpadding="5">
+<tr>
+  <th bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">N</th>
+  <th bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">NS</th>
+  <th bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">S</th>
+  <th bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">A</th>
+  <th bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">AB</th>
+  <th bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">B</th>
+  <th bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">BC</th>
+  <th bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">C</th>
+  <th bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">J</th>
+</tr>
+<tr>
+  <td<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php endif; ?> bgcolor="#FFFFFF" align="center" style="padding:8px; border:#dddddd solid 1px;">新<br>品</td>
+  <td<?php if($_POST['condition'] == "NS"):?> bgcolor="#FFF766"<?php endif; ?> bgcolor="#FFFFFF" align="center" style="padding:8px; border:#dddddd solid 1px;">未<br>使<br>用<br>品</td>
+  <td<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php endif; ?> bgcolor="#FFFFFF" align="center" style="padding:8px; border:#dddddd solid 1px;">新<br>品<br>同<br>様<br>品</td>
+  <td<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php endif; ?> bgcolor="#FFFFFF" align="center" style="padding:8px; border:#dddddd solid 1px;">中<br>古<br>超<br>美<br>品</td>
+  <td<?php if($_POST['condition'] == "AB"):?> bgcolor="#FFF766"<?php endif; ?> bgcolor="#FFFFFF" align="center" style="padding:8px; border:#dddddd solid 1px;">中<br>古<br>美<br>品</td>
+  <td<?php if($_POST['condition'] == "B"):?> bgcolor="#FFF766"<?php endif; ?> bgcolor="#FFFFFF" align="center" style="padding:8px; border:#dddddd solid 1px;">中<br>古<br>良<br>品</td>
+  <td<?php if($_POST['condition'] == "BC"):?> bgcolor="#FFF766"<?php endif; ?> bgcolor="#FFFFFF" align="center" style="padding:8px; border:#dddddd solid 1px;">強<br>い<br>使<br>用<br>感</td>
+  <td<?php if($_POST['condition'] == "C"):?> bgcolor="#FFF766"<?php endif; ?> bgcolor="#FFFFFF" align="center" style="padding:8px; border:#dddddd solid 1px;">破<br>損<br>有</td>
+  <td<?php if($_POST['condition'] == "J"):?> bgcolor="#FFF766"<?php endif; ?> bgcolor="#FFFFFF" align="center" style="padding:8px; border:#dddddd solid 1px;">要<br>修<br>理</td>
+</tr>
 </table>
 </center>

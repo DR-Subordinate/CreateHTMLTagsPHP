@@ -111,6 +111,7 @@
 <?php if($_POST['add-top'] == "true"): ?>
 <br>※チェーンは付属致しません。<br>
 <?php endif; ?>
+写真・説明欄に表記されている付属品以外は付属しておりません。
 </td>
 </tr>
 <?php elseif($_POST['add-top'] == "true"): ?>
@@ -149,13 +150,6 @@
 <tr>
 <th width="20%" bgcolor="#EBE8D7" style="padding:8px;border:#dddddd solid 1px;"><?php echo $_POST['free-text-3']; ?></th>
 <td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;"><?php echo nl2br($_POST['free-text-content-3']); ?></td>
-</tr>
-<?php endif; ?>
-<?php if(!empty($_POST['accessory'])): ?>
-<tr>
-<th width="20%" bgcolor="#EBE8D7" style="padding:8px;border:#dddddd solid 1px;">付属品について</th>
-<td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;">写真に掲載のないもの、商品説明に表記されている付属品以外は付属しておりません。<br>商品説明・写真にてご確認の上、ご不明点がございましたらお気軽にお問い合わせ下さいませ。<br>
-</td>
 </tr>
 <?php endif; ?>
 </table>

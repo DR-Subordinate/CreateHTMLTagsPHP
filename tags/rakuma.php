@@ -67,6 +67,7 @@
 付属品　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['accessory']); ?>
 
+写真・説明欄に表記されている付属品以外は付属しておりません。
 <?php endif; ?>
 <?php if(!empty($_POST['outside'])): ?>
 外　側　　<?php echo str_replace(array("\n"), '
@@ -140,9 +141,6 @@ switch ($_POST['condition']) {
 <?php echo $_POST['staff-comment']; ?>
 
 <?php endif; ?>
-付属品について
-写真に掲載のないもの、商品説明に表記されている付属品以外は付属しておりません。
-商品説明・写真にてご確認の上、ご不明点がございましたらお気軽にお問い合わせ下さいませ。
 
 <?php if(!empty($_POST['related-word'])): ?>
 関連ワード　<?php echo $_POST['related-word']; ?>

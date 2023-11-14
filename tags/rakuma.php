@@ -67,6 +67,8 @@
 付属品　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['accessory']); ?>
 
+
+
 写真・説明欄に表記されている付属品以外は付属しておりません。
 <?php endif; ?>
 <?php if(!empty($_POST['outside'])): ?>

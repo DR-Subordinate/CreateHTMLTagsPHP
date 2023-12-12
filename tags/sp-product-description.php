@@ -161,6 +161,12 @@
 </td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['free-text-content'])): ?>
+<tr>
+<td bgcolor="#EEE"><b><?php echo $_POST['free-text']; ?></b></td>
+<td bgcolor="#FFF"><?php echo $_POST['free-text-content']; ?></td>
+</tr>
+<?php endif; ?>
 <?php if(!empty($_POST['free-text-content-2'])): ?>
 <tr>
 <td bgcolor="#EEE"><b><?php echo $_POST['free-text-2']; ?></b></td>

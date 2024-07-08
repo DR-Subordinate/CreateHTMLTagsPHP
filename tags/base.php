@@ -64,6 +64,13 @@
 
 ------------------------
 <?php endif; ?>
+<?php if(!empty($_POST['accessory'])): ?>
+【付属品】
+<?php echo str_replace(array("\n"), '
+', $_POST['accessory']); ?>
+
+------------------------
+<?php endif; ?>
 <?php if(!empty($_POST['condition'])): ?>
 商品ランク　【<?php echo $_POST['condition']; ?>】　<?php endif; ?>
 <?php 

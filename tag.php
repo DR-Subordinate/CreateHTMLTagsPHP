@@ -67,11 +67,6 @@
       </section>
 
       <section class="lg:mx-auto mt-6">
-        <h1 class="font-bold">BUYMA用</h1>
-        <textarea name="buyma" cols="48" rows="8" class="border border-black ms-gothic"><?php include('tags/buyma.php'); ?></textarea>
-      </section>
-
-      <section class="lg:mx-auto mt-6">
         <h1 class="font-bold">Yahoo!用タグ</h1>
         <textarea name="yahoo" cols="48" rows="8" class="border border-black ms-gothic"><?php include('tags/yahoo.php'); ?></textarea>
       </section>

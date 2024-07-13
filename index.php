@@ -52,11 +52,11 @@
         <div class="w-[500px] mt-6 m-3">
           <div class="border border-black">
             <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">商品管理番号(商品URL)</p>
+              <p class="font-bold">詳細画像URL1</p>
               <input type="text" name="product-url" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">詳細画像URL</p>
+              <p class="font-bold">詳細画像URL2</p>
               <input type="text" name="img-url" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black bg-slate-300">

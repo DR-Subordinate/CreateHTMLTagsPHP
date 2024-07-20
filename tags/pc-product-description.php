@@ -284,7 +284,7 @@ switch ($_POST['condition']) {
 <?php endif; ?>
 <?php if($_POST['add-banner'] == "true"): ?>
 <div>
-<a href="https://event.rakuten.co.jp/asuraku/about/anshin/" target="_blank"><img src="https://image.rakuten.co.jp/brandacross/cabinet/img62570276.jpg" alt="あす楽対応商品"></a>
+<img src="https://image.rakuten.co.jp/brandacross/cabinet/yokuzituhaisou.jpg" alt="翌日配送">
 </div>
 <?php endif; ?>
 <?php if($_POST['business-days'] == "true"): ?>

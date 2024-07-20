@@ -275,7 +275,7 @@ switch ($_POST['condition']) {
 <img src="https://image.rakuten.co.jp/brandacross/cabinet/hepin_gai_sp_2.jpg"width="100%"><br>
 <?php endif; ?>
 <?php if($_POST['add-banner'] == "true"): ?>
-<a href="https://event.rakuten.co.jp/asuraku/about/anshin/" target="_blank"><img src="https://image.rakuten.co.jp/brandacross/cabinet/asuraku-sample_sp.jpg"width="100%"></a><br>
+<img src="https://image.rakuten.co.jp/brandacross/cabinet/yokuzituhaisou.jpg"width="100%"><br>
 <?php endif; ?>
 <?php if($_POST['business-days'] == "true"): ?>
 <img src="https://image.rakuten.co.jp/brandacross/cabinet/150608_shipping.jpg"width="100%" alt="2～3営業日以内に出荷致します。"><br>

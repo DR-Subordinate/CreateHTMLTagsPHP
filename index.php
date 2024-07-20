@@ -191,7 +191,7 @@
               </label>
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">あす楽</p>
+              <p class="font-bold">翌日配送</p>
               <label>
                 <input type="radio" name="add-banner" value="true" checked>
                 <span class="mr-6">バナー追加</span>

@@ -299,17 +299,6 @@
                 <span>なし</span>
               </label>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">ヴィトン製造国補足</p>
-              <label>
-                <input type="radio" name="show-country-of-manufacture" value="true">
-                <span class="mr-6">表示</span>
-              </label>
-              <label>
-                <input type="radio" name="show-country-of-manufacture" value="false" checked>
-                <span>なし</span>
-              </label>
-            </div>
             <div class="p-1">
               <p class="font-bold">エルメスカラー説明</p>
               <label>

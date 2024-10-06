@@ -91,7 +91,7 @@
               <p class="font-bold">製造番号</p>
               <textarea name="serial-number" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">ヴィトン製造国補足</p>
               <select name="country-of-manufacture" class="border border-black">
                 <option value="" selected>選択してください</option>
@@ -101,43 +101,43 @@
                 <option value="Other">その他</option>
               </select>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black">
               <p class="font-bold">カラー</p>
               <textarea name="color" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">形状</p>
               <textarea name="shape" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black">
               <p class="font-bold">性別</p>
               <textarea name="sex" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">参考定価</p>
               <input type="text" name="price" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black">
               <p class="font-bold">サイズ</p>
               <textarea name="size" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">重量</p>
               <textarea name="weight" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black">
               <p class="font-bold">機能</p>
               <textarea name="feature" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">収納可能アイテム	</p>
               <textarea name="containable-item" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black">
               <p class="font-bold">付属品</p>
               <textarea name="accessory" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">状態</p>
               <select name="condition" class="border border-black">
                 <option value="" selected>選択してください</option>
@@ -152,35 +152,35 @@
                 <option value="D">D</option>
               </select>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black">
               <p class="font-bold">外側</p>
               <textarea name="outside" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">内側</p>
               <textarea name="inside" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black">
               <p class="font-bold">特記</p>
               <textarea name="special-note" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">スタッフコメント</p>
               <textarea name="staff-comment" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black">
               <input type="text" name="free-text" class="mb-1 border border-black">
               <textarea name="free-text-content" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-slate-300">
               <input type="text" name="free-text-2" class="mb-1 border border-black">
               <input type="text" name="free-text-content-2" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black">
               <input type="text" name="free-text-3" class="mb-1 border border-black">
               <input type="text" name="free-text-content-3" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-black">
+            <div class="p-1 border-black bg-slate-300">
               <p class="font-bold">関連ワード</p>
               <textarea name="related-word" cols="40" rows="2" class="border border-black"></textarea>
             </div>

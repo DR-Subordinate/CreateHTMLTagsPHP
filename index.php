@@ -299,7 +299,7 @@
                 <span>なし</span>
               </label>
             </div>
-            <div class="p-1">
+            <div class="p-1 bg-slate-300">
               <p class="font-bold">エルメスカラー説明</p>
               <label>
                 <input type="radio" name="show-hermes-color-description" value="true">

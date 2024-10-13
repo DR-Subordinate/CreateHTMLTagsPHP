@@ -16,6 +16,10 @@
         <span class="inline-block py-2 font-bold">NS</span>
         <span>新品、未使用品 製造から2年以上経過、又は製造年が不明な商品</span>
       </div>
+      <div class="px-1">
+        <span class="inline-block py-2 font-bold">NS</span>
+        <span>未使用展示品</span>
+      </div>
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">S</span>
         <span>新品同様品</span>
@@ -145,6 +149,7 @@
                 <option value="" selected>選択してください</option>
                 <option value="N">N</option>
                 <option value="NS">NS</option>
+                <option value="NS-display-item">NS(未使用展示品)</option>
                 <option value="S">S</option>
                 <option value="A">A</option>
                 <option value="AB">AB</option>

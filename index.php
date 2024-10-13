@@ -95,6 +95,7 @@
               <p class="font-bold">ヴィトン製造国補足</p>
               <select name="country-of-manufacture" class="border border-black">
                 <option value="" selected>選択してください</option>
+                <option value="France-or-Spain-or-Italy">フランス、スペイン、イタリアのいずれか</option>
                 <option value="France">フランス</option>
                 <option value="Spain">スペイン</option>
                 <option value="Italy">イタリア</option>

@@ -54,10 +54,29 @@
 </tr>
 <?php endif; ?>
 	
-<?php if($_POST['show-country-of-manufacture'] == "true"): ?>
+<?php if($_POST['country-of-manufacture'] !== ""): ?>
 <tr>
 <th width="25%" bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">製造国</th>
-<td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;">フランス・スペイン・イタリアのいずれか<br>(※まれにUSAもございます)</td>
+<td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php
+switch ($_POST['country-of-manufacture']) {
+    case "France-or-Spain-or-Italy":
+        echo "フランス、スペイン、イタリアのいずれか";
+        break;
+    case "France":
+        echo "フランス";
+        break;
+    case "Spain":
+        echo "スペイン";
+        break;
+    case "Italy":
+        echo "イタリア";
+        break;
+    case "Other":
+        echo "{$_POST['other-text']}";
+        break;
+}
+ ?>
+</td>
 </tr>
 <?php endif; ?>
 

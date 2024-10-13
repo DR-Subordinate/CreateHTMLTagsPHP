@@ -22,6 +22,30 @@
 
 ------------------------
 <?php endif; ?>
+<?php if(!empty($_POST['country-of-manufacture'])): ?>
+【製造国】
+<?php
+switch ($_POST['country-of-manufacture']) {
+    case "France-or-Spain-or-Italy":
+        echo "フランス、スペイン、イタリアのいずれか";
+        break;
+    case "France":
+        echo "フランス";
+        break;
+    case "Spain":
+        echo "スペイン";
+        break;
+    case "Italy":
+        echo "イタリア";
+        break;
+    case "Other":
+        echo "{$_POST['other-text']}";
+        break;
+}
+ ?>
+
+------------------------
+<?php endif; ?>
 <?php if(!empty($_POST['color'])): ?>
 【カラー】
 <?php echo str_replace(array("\n"), '

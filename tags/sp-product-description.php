@@ -53,10 +53,29 @@
 <td bgcolor="#FFF"><?php echo nl2br($_POST['serial-number']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if($_POST['show-country-of-manufacture'] == "true"): ?>
+<?php if($_POST['country-of-manufacture'] !== ""): ?>
 <tr>
 <td bgcolor="#EEE"><b>製造国</b></td>
-<td bgcolor="#FFF">フランス・スペイン・イタリアのいずれか<br>(※まれにUSAもございます)</td>
+<td bgcolor="#FFF"><?php
+switch ($_POST['country-of-manufacture']) {
+    case "France-or-Spain-or-Italy":
+        echo "フランス、スペイン、イタリアのいずれか";
+        break;
+    case "France":
+        echo "フランス";
+        break;
+    case "Spain":
+        echo "スペイン";
+        break;
+    case "Italy":
+        echo "イタリア";
+        break;
+    case "Other":
+        echo "{$_POST['other-text']}";
+        break;
+}
+ ?>
+</td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['color'])): ?>

@@ -113,6 +113,9 @@ switch ($_POST['condition']) {
     case "NS":
         echo "（新品、未使用品 製造から2年以上経過、又は製造年が不明な商品）";
         break;
+    case "NS-display-item":
+        echo "未使用展示品";
+        break;
     case "S":
         echo "（新品同様品）";
         break;

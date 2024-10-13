@@ -96,7 +96,7 @@ switch ($_POST['country-of-manufacture']) {
 ------------------------
 <?php endif; ?>
 <?php if(!empty($_POST['condition'])): ?>
-商品ランク　【<?php echo $_POST['condition']; ?>】　<?php endif; ?>
+商品ランク　【<?php echo ($_POST['condition'] === 'NS-display-item') ? 'NS（未使用展示品）' : $_POST['condition']; ?>】　<?php endif; ?>
 <?php 
 
 switch ($_POST['condition']) {

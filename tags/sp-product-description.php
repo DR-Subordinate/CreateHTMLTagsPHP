@@ -211,6 +211,7 @@ switch ($_POST['country-of-manufacture']) {
 <table border="1" cellspacing="0" cellpadding="7" width="100%" bordercolor="#999">
 	<td align="center" width="11%"<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>N</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "NS"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>NS</td>
+	<td align="center" width="11%"<?php if($_POST['condition'] == "NS-display-item"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>NS(未使用展示品)</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>S</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>A</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "AB"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>AB</td>
@@ -233,6 +234,9 @@ switch ($_POST['condition']) {
         break;
     case "NS":
         echo "新品、未使用品 製造から2年以上経過、又は製造年が不明な商品";
+        break;
+    case "NS-display-item":
+        echo "未使用展示品";
         break;
     case "S":
         echo "新品同様品";

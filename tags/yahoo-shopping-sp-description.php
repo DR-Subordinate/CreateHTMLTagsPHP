@@ -177,7 +177,7 @@ switch ($_POST['country-of-manufacture']) {
 <img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_2.jpg" style="vertical-align: bottom" alt="商品ランク" width="100%">
 <table class="tblitemrank" width="100%" style="border-collapse:collapse;">
 <tr>
-<th width="20%" bgcolor="#EBE8D7" style="padding:8px;border:#dddddd solid 1px;font-size:24px;font-weight:bold;color:#bf0000;"><?php echo $_POST['condition']; ?></th>
+<th width="20%" bgcolor="#EBE8D7" style="padding:8px;border:#dddddd solid 1px;font-size:24px;font-weight:bold;color:#bf0000;"><?php echo ($_POST['condition'] === 'NS-display-item') ? 'NS（未使用展示品）' : $_POST['condition']; ?></th>
 <td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;">
 <?php 
 switch ($_POST['condition']) {

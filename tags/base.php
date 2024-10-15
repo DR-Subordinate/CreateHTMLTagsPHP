@@ -1,3 +1,9 @@
+<?php if(!empty($_POST['brand'])): ?>
+【ブランド】
+<?php echo $_POST['brand']; ?>
+
+------------------------
+<?php endif; ?>
 <?php if(!empty($_POST['product-name'])): ?>
 【商品名】
 <?php echo $_POST['product-name']; ?>

@@ -223,7 +223,7 @@ switch ($_POST['country-of-manufacture']) {
 </td>
 </tr>
 <tr>
-<td bgcolor="#EEE" width="80"><center><font size="7" color="#F00"><?php echo $_POST['condition']; ?></font></center></td>
+<td bgcolor="#EEE" width="80"><center><font size="7" color="#F00"><?php echo ($_POST['condition'] === 'NS-display-item') ? 'NS（未使用展示品）' : $_POST['condition']; ?></font></center></td>
 <td>
 <font size="1">
 <?php 

@@ -198,7 +198,7 @@ switch ($_POST['country-of-manufacture']) {
 <br />
 <table class="tblitemrank">
 <tr>
-	<th style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;"><?php echo $_POST['condition']; ?></th>
+	<th style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;"><?php echo ($_POST['condition'] === 'NS-display-item') ? 'NS（未使用展示品）' : $_POST['condition']; ?></th>
 	<td>
 <?php 
 switch ($_POST['condition']) {

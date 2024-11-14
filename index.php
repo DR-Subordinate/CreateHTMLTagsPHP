@@ -155,6 +155,7 @@
                 <option value="NS">NS</option>
                 <option value="NS-display-item">NS(未使用展示品)</option>
                 <option value="S">S</option>
+                <option value="A">SA</option>
                 <option value="A">A</option>
                 <option value="AB">AB</option>
                 <option value="B">B</option>

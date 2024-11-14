@@ -208,7 +208,7 @@ switch ($_POST['country-of-manufacture']) {
 <img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_2.jpg" alt="商品ランク" style="vertical-align: bottom" width="80%">
 <table width="80%" bgcolor="#dddddd" cellspacing="1" cellpadding="10" style="border-collapse:collapse;">
 <tr>
-<th width="25%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle; font-size:24px; font-weight:bold; color:#bf0000; width:80px;" ><b><font size="5" color="#bf0000"><?php echo ($_POST['condition'] === 'NS-display-item') ? 'NS' : $_POST['condition']; ?></font></b></th>
+<th width="25%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle; font-size:24px; font-weight:bold; color:#bf0000; width:80px;" ><b><font size="5" color="#bf0000"><?php echo $_POST['condition']; ?></font></b></th>
 <td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">
 <?php 
 switch ($_POST['condition']) {
@@ -217,9 +217,6 @@ switch ($_POST['condition']) {
         break;
     case "NS":
         echo "新品、未使用品 製造から2年以上経過、又は製造年が不明な商品";
-        break;
-    case "NS-display-item":
-        echo "未使用展示品";
         break;
     case "S":
         echo "新品同様品";
@@ -284,7 +281,7 @@ switch ($_POST['condition']) {
 </tr>
 <tr>
   <td<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php else: ?> bgcolor="#FFFFFF"<?php endif; ?> align="center" style="padding:8px; border:#dddddd solid 1px;">新<br>品</td>
-  <td<?php if($_POST['condition'] == "NS" || $_POST['condition'] == "NS-display-item"):?> bgcolor="#FFF766"<?php endif; ?> align="center" style="padding:8px; border:#dddddd solid 1px;"><?php echo ($_POST['condition'] == "NS") ? "未<br>使<br>用<br>品" : (($_POST['condition'] == "NS-display-item") ? "未<br>使<br>用<br>展<br>示<br>品" : "未<br>使<br>用<br>品"); ?></td>
+  <td<?php if($_POST['condition'] == "NS"):?> bgcolor="#FFF766"<?php else: ?> bgcolor="#FFFFFF"<?php endif; ?> align="center" style="padding:8px; border:#dddddd solid 1px;">未<br>使<br>用<br>品</td>
   <td<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php else: ?> bgcolor="#FFFFFF"<?php endif; ?> align="center" style="padding:8px; border:#dddddd solid 1px;">新<br>品<br>同<br>様<br>品</td>
   <td<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php else: ?> bgcolor="#FFFFFF"<?php endif; ?> align="center" style="padding:8px; border:#dddddd solid 1px;">中<br>古<br>超<br>美<br>品</td>
   <td<?php if($_POST['condition'] == "AB"):?> bgcolor="#FFF766"<?php else: ?> bgcolor="#FFFFFF"<?php endif; ?> align="center" style="padding:8px; border:#dddddd solid 1px;">中<br>古<br>美<br>品</td>

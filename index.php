@@ -16,10 +16,6 @@
         <span class="inline-block py-2 font-bold">NS</span>
         <span>未使用品 付属品に欠品あり又は製造年が不明な商品※保管による僅かなダメージがある場合がございます。</span>
       </div>
-      <div class="px-1">
-        <span class="inline-block py-2 font-bold">NS</span>
-        <span>未使用展示品</span>
-      </div>
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">S</span>
         <span>展示品またはアウトレット商品 未使用品だが長期保管や展示により明確なダメージ等がある新古商品</span>

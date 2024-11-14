@@ -212,6 +212,7 @@ switch ($_POST['country-of-manufacture']) {
 	<td align="center" width="11%"<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>N</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "NS"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>NS</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>S</td>
+	<td align="center" width="11%"<?php if($_POST['condition'] == "SA"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>SA</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>A</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "AB"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>AB</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "B"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>B</td>
@@ -229,13 +230,16 @@ switch ($_POST['country-of-manufacture']) {
 
 switch ($_POST['condition']) {
     case "N":
-        echo "新品、未使用品  製造から2年以内の商品";
+        echo "新品※金具部分など輸送・検品の際にどうしてもついてしまう僅かなスレ傷がある場合がございます。";
         break;
     case "NS":
-        echo "新品、未使用品 製造から2年以上経過、又は製造年が不明な商品";
+        echo "未使用品 付属品に欠品あり又は製造年が不明な商品※保管による僅かなダメージがある場合がございます。";
         break;
     case "S":
-        echo "新品同様品";
+        echo "展示品またはアウトレット商品 未使用品だが長期保管や展示により明確なダメージ等がある新古商品";
+        break;
+    case "SA":
+        echo "新品同様品 細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品";
         break;
     case "A":
         echo "数回使用程度の美品";

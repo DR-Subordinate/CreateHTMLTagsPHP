@@ -210,7 +210,7 @@ switch ($_POST['country-of-manufacture']) {
 <td colspan="2" bgcolor="#fff">
 <table border="1" cellspacing="0" cellpadding="7" width="100%" bordercolor="#999">
 	<td align="center" width="11%"<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>N</td>
-	<td align="center" width="11%"<?php if($_POST['condition'] == "NS" || $_POST['condition'] == "NS-display-item"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>NS</td>
+	<td align="center" width="11%"<?php if($_POST['condition'] == "NS"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>NS</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>S</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>A</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "AB"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>AB</td>
@@ -222,7 +222,7 @@ switch ($_POST['country-of-manufacture']) {
 </td>
 </tr>
 <tr>
-<td bgcolor="#EEE" width="80"><center><font size="7" color="#F00"><?php echo ($_POST['condition'] === 'NS-display-item') ? 'NS' : $_POST['condition']; ?></font></center></td>
+<td bgcolor="#EEE" width="80"><center><font size="7" color="#F00"><?php echo $_POST['condition']; ?></font></center></td>
 <td>
 <font size="1">
 <?php 
@@ -233,9 +233,6 @@ switch ($_POST['condition']) {
         break;
     case "NS":
         echo "新品、未使用品 製造から2年以上経過、又は製造年が不明な商品";
-        break;
-    case "NS-display-item":
-        echo "未使用展示品";
         break;
     case "S":
         echo "新品同様品";

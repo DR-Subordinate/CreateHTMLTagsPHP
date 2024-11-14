@@ -150,7 +150,7 @@
                 <option value="N">N</option>
                 <option value="NS">NS</option>
                 <option value="S">S</option>
-                <option value="A">SA</option>
+                <option value="SA">SA</option>
                 <option value="A">A</option>
                 <option value="AB">AB</option>
                 <option value="B">B</option>

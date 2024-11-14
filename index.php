@@ -153,7 +153,6 @@
                 <option value="" selected>選択してください</option>
                 <option value="N">N</option>
                 <option value="NS">NS</option>
-                <option value="NS-display-item">NS(未使用展示品)</option>
                 <option value="S">S</option>
                 <option value="A">SA</option>
                 <option value="A">A</option>

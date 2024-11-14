@@ -198,7 +198,7 @@ switch ($_POST['country-of-manufacture']) {
 <br />
 <table class="tblitemrank">
 <tr>
-	<th style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;"><?php echo ($_POST['condition'] === 'NS-display-item') ? 'NS' : $_POST['condition']; ?></th>
+	<th style="font-size:24px;font-weight:bold;color:#bf0000;width:80px;"><?php echo $_POST['condition']; ?></th>
 	<td>
 <?php 
 switch ($_POST['condition']) {
@@ -207,9 +207,6 @@ switch ($_POST['condition']) {
         break;
     case "NS":
         echo "新品、未使用品 製造から2年以上経過、又は製造年が不明な商品";
-        break;
-    case "NS-display-item":
-        echo "未使用展示品";
         break;
     case "S":
         echo "新品同様品";
@@ -274,7 +271,7 @@ switch ($_POST['condition']) {
 	</tr>
 	<tr>
 		<td<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php endif; ?>>新<br>品</td>
-		<td<?php if($_POST['condition'] == "NS" || $_POST['condition'] == "NS-display-item"):?> bgcolor="#FFF766"<?php endif; ?>><?php echo ($_POST['condition'] == "NS") ? "未<br>使<br>用<br>品" : (($_POST['condition'] == "NS-display-item") ? "未<br>使<br>用<br>展<br>示<br>品" : "未<br>使<br>用<br>品"); ?></td>
+		<td<?php if($_POST['condition'] == "NS"):?> bgcolor="#FFF766"<?php endif; ?>>未<br>使<br>用<br>品</td>
 		<td<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php endif; ?>>新<br>品<br>同<br>様<br>品</td>
 		<td<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>超<br>美<br>品</td>
 		<td<?php if($_POST['condition'] == "AB"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>美<br>品</td>

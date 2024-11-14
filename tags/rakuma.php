@@ -103,7 +103,7 @@
 
 <?php endif; ?>
 <?php if(!empty($_POST['condition'])): ?>
-商品ランク　　<?php echo ($_POST['condition'] === 'NS-display-item') ? 'NS' : $_POST['condition']; ?>　　<?php endif; ?>
+商品ランク　　<?php echo $_POST['condition']; ?>　　<?php endif; ?>
 <?php 
 
 switch ($_POST['condition']) {
@@ -112,9 +112,6 @@ switch ($_POST['condition']) {
         break;
     case "NS":
         echo "（新品、未使用品 製造から2年以上経過、又は製造年が不明な商品）";
-        break;
-    case "NS-display-item":
-        echo "（未使用展示品）";
         break;
     case "S":
         echo "（新品同様品）";

@@ -331,7 +331,7 @@
 <TD ALIGN=center BGCOLOR=#ffffff WIDTH=10%>
 <B>
 <FONT SIZE="7" color="#ff0000">
-<?php echo ($_POST['condition'] === 'NS-display-item') ? 'NS（未使用展示品）' : $_POST['condition']; ?>
+<?php echo $_POST['condition']; ?>
 </font>
 </B>
 </TD>

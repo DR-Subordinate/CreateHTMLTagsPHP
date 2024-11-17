@@ -547,11 +547,11 @@
       const originalBoxDamageCheckbox = document.querySelector('input[name="original-box-damage"]');
       const specialNoteTextarea = document.querySelector('textarea[name="special-note"]');
       const originalBoxDamageText = "※純正箱には入荷過程による汚れや擦れ等のダメージがある場合がございます。予めご了承ください。";
-      originalBoxDamageCheckbox.addEventListener('change', function() {
+      originalBoxDamageCheckbox.addEventListener("change", () => {
           if (this.checked) {
               specialNoteTextarea.value += originalBoxDamageText;
           } else {
-              specialNoteTextarea.value = specialNoteTextarea.value.replace(originalBoxDamageText, '');
+              specialNoteTextarea.value = specialNoteTextarea.value.replace(originalBoxDamageText, "");
           }
       });
     </script>

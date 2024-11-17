@@ -159,7 +159,7 @@
               <textarea name="inside" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">特記</p>
+              <p class="font-bold">特記<label class="ml-28 font-normal">純正箱ダメージ案内を追加<input type="checkbox" name="original-box-damage"></label></p>
               <textarea name="special-note" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
@@ -542,6 +542,17 @@
       itemCategoryBtn.addEventListener("click", () => {
         categoryNumber.value = "";
         itemCategoryURL.value = "";
+      });
+
+      const originalBoxDamageCheckbox = document.querySelector('input[name="original-box-damage"]');
+      const specialNoteTextarea = document.querySelector('textarea[name="special-note"]');
+      const originalBoxDamageText = "※純正箱には入荷過程による汚れや擦れ等のダメージがある場合がございます。予めご了承ください。";
+      originalBoxDamageCheckbox.addEventListener('change', function() {
+          if (this.checked) {
+              specialNoteTextarea.value += originalBoxDamageText;
+          } else {
+              specialNoteTextarea.value = specialNoteTextarea.value.replace(originalBoxDamageText, '');
+          }
       });
     </script>
   </body>

@@ -203,34 +203,28 @@ switch ($_POST['country-of-manufacture']) {
 <?php 
 switch ($_POST['condition']) {
     case "N":
-        echo "新品※金具部分など輸送・検品の際にどうしてもついてしまう僅かなスレ傷がある場合がございます。";
-        break;
-    case "NS":
-        echo "未使用品 付属品に欠品あり又は製造年が不明な商品※保管による僅かなダメージがある場合がございます。";
+        echo "<b>新品</b><br>※金具部分など輸送・検品の際にどうしてもついてしまう僅かなスレ傷がある場合がございます。";
         break;
     case "S":
-        echo "展示品またはアウトレット商品 未使用品だが長期保管や展示により明確なダメージ等がある新古商品";
+        echo "<b>未使用品（展示品またはアウトレット商品含む）</b><br>未使用品だが長期保管や展示により明確なダメージ等がある商品。アウトレット商品も含まれます。※詳細は下記説明をご覧ください";
         break;
     case "SA":
-        echo "新品同様品 細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品";
+        echo "<b>新品同様品</b><br>細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品";
         break;
     case "A":
-        echo "数回使用程度の美品";
+        echo "<b>数回使用程度の美品</b>";
         break;
     case "AB":
-        echo "若干の小傷又はシミがあるが全体的には状態が良い";
+        echo "<b>若干の小傷又はシミがあるが全体的には状態が良い</b>";
         break;
     case "B":
-        echo "一般的な中古品で全体的に使用感がある";
+        echo "<b>一般的な中古品で全体的に使用感がある</b>";
         break;
     case "BC":
-        echo "全体的に強い使用感がある";
+        echo "<b>全体的に強い使用感がある</b>";
         break;
     case "C":
-        echo "強い使用感あり　劣化や大きい汚れなどがある";
-        break;
-    case "D":
-        echo "欠品、故障有り";
+        echo "<b>強い使用感あり　劣化や大きい汚れなどがある</b>";
         break;
 }
  ?></td></tr>
@@ -263,7 +257,6 @@ switch ($_POST['condition']) {
 <table id="rankDesc">
 	<tr>
 		<th>N</th>
-		<th>NS</th>
 		<th>S</th>
 		<th>SA</th>
 		<th>A</th>
@@ -271,19 +264,16 @@ switch ($_POST['condition']) {
 		<th>B</th>
 		<th>BC</th>
 		<th>C</th>
-		<th>J</th>
 	</tr>
 	<tr>
 		<td<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php endif; ?>>新<br>品</td>
-		<td<?php if($_POST['condition'] == "NS"):?> bgcolor="#FFF766"<?php endif; ?>>未<br>使<br>用<br>品</td>
-		<td<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php endif; ?>>展<br>示<br>品<br>ま<br>た<br>は<br>ア<br>ウ<br>ト<br>レ<br>ッ<br>ト<br>商<br>品</td>
+		<td<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php endif; ?>>未<br>使<br>用<br>品</td>
 		<td<?php if($_POST['condition'] == "SA"):?> bgcolor="#FFF766"<?php endif; ?>>新<br>品<br>同<br>様<br>品</td>
-		<td<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>超<br>美<br>品</td>
-		<td<?php if($_POST['condition'] == "AB"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>美<br>品</td>
-		<td<?php if($_POST['condition'] == "B"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>良<br>品</td>
+		<td<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>美<br>品</td>
+		<td<?php if($_POST['condition'] == "AB"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>良<br>品</td>
+		<td<?php if($_POST['condition'] == "B"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>品</td>
 		<td<?php if($_POST['condition'] == "BC"):?> bgcolor="#FFF766"<?php endif; ?>>強<br>い<br>使<br>用<br>感</td>
 		<td<?php if($_POST['condition'] == "C"):?> bgcolor="#FFF766"<?php endif; ?>>破<br>損<br>有</td>
-		<td<?php if($_POST['condition'] == "J"):?> bgcolor="#FFF766"<?php endif; ?>>要<br>修<br>理</td>
 	</tr>
 </table>
 <br>

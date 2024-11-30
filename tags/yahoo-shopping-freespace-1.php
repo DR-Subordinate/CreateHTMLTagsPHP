@@ -222,7 +222,7 @@ switch ($_POST['condition']) {
         echo "<b>新品同様品</b><br>細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品";
         break;
     case "A":
-        echo "<b>数回使用程度の美品</b>";
+        echo "<b>中古品の中でも美品</b>";
         break;
     case "AB":
         echo "<b>若干の小傷又はシミがあるが全体的には状態が良い</b>";

@@ -23,7 +23,7 @@
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">A</span>
-        <span>数回使用程度の美品</span>
+        <span>中古品の中でも美品</span>
       </div>
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">AB</span>

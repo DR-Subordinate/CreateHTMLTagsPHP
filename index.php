@@ -23,15 +23,15 @@
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">A</span>
-        <span>中古品の中でも美品</span>
+        <span>中古美品 多少の使用感・ダメージ等はあるが、比較的奇麗な商品※ランクは目安となりますので、下部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</span>
       </div>
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">AB</span>
-        <span>若干の小傷又はシミがあるが全体的には状態が良い</span>
+        <span>中古良品 使用感・多少のキズや汚れ等があるが、全体的には状態が良い商品※ランクは目安となりますので、下部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</span>
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">B</span>
-        <span>一般的な中古品で全体的に使用感がある</span>
+        <span>中古品 日常的な使用感・一見してキズや汚れが目立つが、使用には差支えのない状態の商品※ランクは目安となりますので、下部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</span>
       </div>
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">BC</span>

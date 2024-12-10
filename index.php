@@ -89,7 +89,7 @@
               <textarea name="serial-number" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">ヴィトン製造国</p>
+              <p class="font-bold">製造国</p>
               <select name="country-of-manufacture" class="border border-black" style="margin-bottom: 8px;">
                 <option value="" selected>選択してください</option>
                 <option value="France-or-Spain-or-Italy">フランス、スペイン、イタリアのいずれか</option>

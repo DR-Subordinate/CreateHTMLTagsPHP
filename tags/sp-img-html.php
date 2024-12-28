@@ -14,7 +14,7 @@
 </head>
 <body>
 <div style="font-size:14px; color:#333; margin:0; padding:10px 20px;">商品詳細写真</div>
-<img src="head_img.jpg?11" width="100%">
+<img src="https://image.rakuten.co.jp/brandacross/cabinet/pict_pinch_swipe.jpg" width="100%">
 <div id="galleria">
 
 

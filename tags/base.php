@@ -101,6 +101,13 @@ switch ($_POST['country-of-manufacture']) {
 
 ------------------------
 <?php endif; ?>
+<?php if(!empty($_POST['price'])): ?>
+【参考定価】
+<?php echo str_replace(array("\n"), '
+', $_POST['price']); ?>
+
+------------------------
+<?php endif; ?>
 <?php if(!empty($_POST['condition'])): ?>
 商品ランク　【<?php echo $_POST['condition']; ?>】　<?php endif; ?>
 <?php 

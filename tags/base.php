@@ -104,7 +104,7 @@ switch ($_POST['country-of-manufacture']) {
 <?php if(!empty($_POST['price'])): ?>
 【参考定価】
 <?php echo str_replace(array("\n"), '
-', $_POST['price']); ?>
+', $_POST['price']); ?>円
 
 ------------------------
 <?php endif; ?>

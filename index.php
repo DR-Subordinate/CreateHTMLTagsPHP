@@ -7,40 +7,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="w-[500px] m-3 border border-black">
-      <div class="px-1 bg-slate-300">
-        <span class="inline-block py-2 font-bold">N</span>
-        <span>新品※金具部分など輸送・検品の際にどうしてもついてしまう僅かなスレ傷がある場合がございます。</span>
+    <div class="flex items-start gap-4">
+      <div class="w-[500px] m-3 border border-black">
+        <div class="px-1 bg-slate-300">
+          <span class="inline-block py-2 font-bold">N</span>
+          <span>新品※金具部分など輸送・検品の際にどうしてもついてしまう僅かなスレ傷がある場合がございます。</span>
+        </div>
+        <div class="px-1">
+          <span class="inline-block py-2 font-bold">S</span>
+          <span>未使用品（展示品またはアウトレット商品含む）​ 未使用品だが長期保管や展示により明確なダメージ等がある商品。アウトレット商品も含まれます。​
+          ※詳細は下記説明をご覧ください</span>
+        </div>
+        <div class="px-1 bg-slate-300">
+          <span class="inline-block py-2 font-bold">SA</span>
+          <span>新品同様品 細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品</span>
+        </div>
+        <div class="px-1">
+          <span class="inline-block py-2 font-bold">A</span>
+          <span>中古美品 多少の使用感・ダメージ等はあるが、比較的奇麗な商品※ランクは目安となりますので、下部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</span>
+        </div>
+        <div class="px-1 bg-slate-300">
+          <span class="inline-block py-2 font-bold">AB</span>
+          <span>中古良品 使用感・多少のキズや汚れ等があるが、全体的には状態が良い商品※ランクは目安となりますので、下部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</span>
+        </div>
+        <div class="px-1">
+          <span class="inline-block py-2 font-bold">B</span>
+          <span>中古品 日常的な使用感・一見してキズや汚れが目立つが、使用には差支えのない状態の商品※ランクは目安となりますので、下部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</span>
+        </div>
+        <div class="px-1 bg-slate-300">
+          <span class="inline-block py-2 font-bold">BC</span>
+          <span>全体的に強い使用感がある</span>
+        </div>
+        <div class="px-1">
+          <span class="inline-block py-2 font-bold">C</span>
+          <span>強い使用感あり　劣化や大きい汚れなどがある</span>
+        </div>
       </div>
-      <div class="px-1">
-        <span class="inline-block py-2 font-bold">S</span>
-        <span>未使用品（展示品またはアウトレット商品含む）​ 未使用品だが長期保管や展示により明確なダメージ等がある商品。アウトレット商品も含まれます。​
-        ※詳細は下記説明をご覧ください</span>
-      </div>
-      <div class="px-1 bg-slate-300">
-        <span class="inline-block py-2 font-bold">SA</span>
-        <span>新品同様品 細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品</span>
-      </div>
-      <div class="px-1">
-        <span class="inline-block py-2 font-bold">A</span>
-        <span>中古美品 多少の使用感・ダメージ等はあるが、比較的奇麗な商品※ランクは目安となりますので、下部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</span>
-      </div>
-      <div class="px-1 bg-slate-300">
-        <span class="inline-block py-2 font-bold">AB</span>
-        <span>中古良品 使用感・多少のキズや汚れ等があるが、全体的には状態が良い商品※ランクは目安となりますので、下部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</span>
-      </div>
-      <div class="px-1">
-        <span class="inline-block py-2 font-bold">B</span>
-        <span>中古品 日常的な使用感・一見してキズや汚れが目立つが、使用には差支えのない状態の商品※ランクは目安となりますので、下部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</span>
-      </div>
-      <div class="px-1 bg-slate-300">
-        <span class="inline-block py-2 font-bold">BC</span>
-        <span>全体的に強い使用感がある</span>
-      </div>
-      <div class="px-1">
-        <span class="inline-block py-2 font-bold">C</span>
-        <span>強い使用感あり　劣化や大きい汚れなどがある</span>
-      </div>
+
+      <a href="https://brandacross.jp/tag_tool_new/" class="mt-[33rem] px-4 py-2 border border-black rounded-md bg-slate-100 text-black font-bold text-center inline-block active:shadow-xl">新着</a>
     </div>
 
     <form action="tag.php" method="POST" name="tag-form">

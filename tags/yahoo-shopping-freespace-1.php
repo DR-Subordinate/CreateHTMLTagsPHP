@@ -263,8 +263,8 @@ switch ($_POST['condition']) {
 </tr>
 <?php endif; ?>
 <tr>
-<th style="text-align:center;border:#dddddd solid 1px;"></th>
-<td style="border:#dddddd solid 1px;">※ランクは目安となりますので、上部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</td>
+<th width="25%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;"></th>
+<td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;">※ランクは目安となりますので、上部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</td>
 </tr>
 </table>
 <br>

@@ -281,10 +281,6 @@ switch ($_POST['condition']) {
 <td bgcolor="#FFF"><?php echo nl2br($_POST['syousai']); ?></td>
 </tr>
 <?php endif; ?>
-<tr>
-<td bgcolor="#EEE"></td>
-<td bgcolor="#FFF">※ランクは目安となりますので、上部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</td>
-</tr>
 </table>
 <br>
 

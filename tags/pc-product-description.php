@@ -252,10 +252,6 @@ switch ($_POST['condition']) {
 <td><?php echo nl2br($_POST['syousai']); ?></td>
 </tr>
 <?php endif; ?>
-<tr>
-<th></th>
-<td>※ランクは目安となりますので、上部詳細説明及び青いバナー内の詳細画像をご確認下さいませ。</td>
-</tr>
 </table>
 <br>
 <table id="rankDesc">

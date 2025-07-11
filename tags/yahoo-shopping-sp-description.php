@@ -1,3 +1,8 @@
+<?php if($_POST['return'] == "true"): ?>
+<a href="https://store.shopping.yahoo.co.jp/brand-across/henpin.html"><img src="https://shopping.c.yimg.jp/lib/brand-across/hepin_ok.jpg" width="100%"></a><br><br>
+<?php else: ?>
+<a href="https://store.shopping.yahoo.co.jp/brand-across/henpin.html"><img src="https://shopping.c.yimg.jp/lib/brand-across/hepin_ng.jpg" width="100%"></a><br><br>
+<?php endif; ?>
 <?php if(!empty($_POST['img-url'])): ?>
 <a href="https://shopping.yahoo.co.jp/stores/wrap/bouncer.html?dest_path=https://brandacross.xsrv.jp/syousaigazou/<?php echo $_POST['img-url']; ?>.html" target="_blank" style="margin-bottom: 20px; display: block;">
 <img src="https://shopping.c.yimg.jp/lib/brand-across/pict_link_yh.jpg" border="0" width="100%"></a>

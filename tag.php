@@ -47,6 +47,11 @@
       </section>
 
       <section class="lg:mx-auto mt-6">
+        <h1 class="font-bold">ヤフー商品説明</h1>
+        <textarea name="yahoo-product-description" cols="48" rows="8" class="border border-black ms-gothic"><?php include('tags/yahoo-product-description.php'); ?></textarea>
+      </section>
+
+      <section class="lg:mx-auto mt-6">
         <h1 class="font-bold">ヤフショ＆ヤフオク用説明文(フリースペース1)</h1>
         <textarea name="yahoo-shopping-freespace-1" cols="48" rows="8" class="border border-black ms-gothic"><?php include('tags/yahoo-shopping-freespace-1.php'); ?></textarea>
       </section>

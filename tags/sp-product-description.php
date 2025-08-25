@@ -223,7 +223,7 @@ switch ($_POST['country-of-manufacture']) {
 <tr>
 <td bgcolor="#EEE" width="80"><center><font size="7" color="#F00"><?php echo $_POST['condition']; ?></font></center></td>
 <td>
-<font size="1">
+<font size="2">
 <?php 
 
 switch ($_POST['condition']) {

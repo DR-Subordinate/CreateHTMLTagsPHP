@@ -150,11 +150,11 @@
               </select>
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">外側</p>
+              <p class="font-bold">外側<label class="ml-28 font-normal">ダメージ無し案内を追加<input type="checkbox" name="no-damage-outside"></label></p>
               <textarea name="outside" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">内側</p>
+              <p class="font-bold">内側<label class="ml-28 font-normal">ダメージ無し案内を追加<input type="checkbox" name="no-damage-inside"></label></p>
               <textarea name="inside" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
@@ -541,6 +541,28 @@
       itemCategoryBtn.addEventListener("click", () => {
         categoryNumber.value = "";
         itemCategoryURL.value = "";
+      });
+
+      const noDamageOutsideCheckbox = document.querySelector('input[name="no-damage-outside"]');
+      const outsideTextarea = document.querySelector('textarea[name="outside"]');
+      const noDamageOutsideText = "特記すべき目立つダメージ無し。";
+      noDamageOutsideCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+            outsideTextarea.value += noDamageOutsideText;
+        } else {
+            outsideTextarea.value = outsideTextarea.value.replace(noDamageOutsideText, "");
+        }
+      });
+
+      const noDamageInsideCheckbox = document.querySelector('input[name="no-damage-inside"]');
+      const insideTextarea = document.querySelector('textarea[name="inside"]');
+      const noDamageInsideText = "特記すべき目立つダメージ無し。";
+      noDamageInsideCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+            insideTextarea.value += noDamageInsideText;
+        } else {
+            insideTextarea.value = insideTextarea.value.replace(noDamageInsideText, "");
+        }
       });
 
       const originalBoxDamageCheckbox = document.querySelector('input[name="original-box-damage"]');

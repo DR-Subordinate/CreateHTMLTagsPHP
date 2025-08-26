@@ -158,7 +158,7 @@
               <textarea name="inside" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">特記<label class="ml-28 font-normal">純正箱ダメージ案内を追加<input type="checkbox" name="original-box-damage"></label></p>
+              <p class="font-bold">特記<label class="ml-14 font-normal">純正箱ダメージ案内を追加<input type="checkbox" name="original-box-damage"></label><label class="ml-14 font-normal">エルメス食器<input type="checkbox" name="hermes-dishes"></label></p>
               <textarea name="special-note" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
@@ -573,6 +573,20 @@
             specialNoteTextarea.value += originalBoxDamageText;
         } else {
             specialNoteTextarea.value = specialNoteTextarea.value.replace(originalBoxDamageText, "");
+        }
+      });
+
+      const hermesDishesCheckbox = document.querySelector('input[name="hermes-dishes"]');
+      const hermesDishesText = `※底面接地部分は製法上擦れやすくなっており、僅かなクスミがある場合ございます。
+
+※食器洗浄機、乾燥機のご使用はお勧めしません。電子レンジやオーブン、トースター対応ではありません。
+
+※純正箱に入荷過程による凹みや僅かな擦れ・小汚れ等がある場合がございます。`;
+      hermesDishesCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+            specialNoteTextarea.value += hermesDishesText;
+        } else {
+            specialNoteTextarea.value = specialNoteTextarea.value.replace(hermesDishesText, "");
         }
       });
     </script>

@@ -206,10 +206,16 @@ switch ($_POST['country-of-manufacture']) {
 <tr>
 <td colspan="2" bgcolor="#EEE"><center>■ 状態 ■</center></td>
 </tr>
+<?php
+$conditionText = $_POST['condition'];
+if ($_POST['condition'] === "N　エルメス食器" || $_POST['condition'] === "N　バカラ") {
+    $conditionText = "N";
+  }
+?>
 <tr>
 <td colspan="2" bgcolor="#fff">
 <table border="1" cellspacing="0" cellpadding="7" width="100%" bordercolor="#999">
-	<td align="center" width="11%"<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>N</td>
+	<td align="center" width="11%"<?php if($conditionText == "N"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>N</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>S</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "SA"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>SA</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>A</td>
@@ -220,12 +226,6 @@ switch ($_POST['country-of-manufacture']) {
 </table>
 </td>
 </tr>
-<?php
-$conditionText = $_POST['condition'];
-if ($_POST['condition'] === "N　エルメス食器" || $_POST['condition'] === "N　バカラ") {
-    $conditionText = "N";
-  }
-?>
 <tr>
 <td bgcolor="#EEE" width="80"><center><font size="7" color="#F00"><?php echo $conditionText; ?></font></center></td>
 <td>

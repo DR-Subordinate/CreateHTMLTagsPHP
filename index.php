@@ -147,6 +147,8 @@
                 <option value="B">B</option>
                 <option value="BC">BC</option>
                 <option value="C">C</option>
+                <option value="N　エルメス食器">N エルメス食器</option>
+                <option value="N　バカラ">N バカラ</option>
               </select>
             </div>
             <div class="p-1 border-b border-black">

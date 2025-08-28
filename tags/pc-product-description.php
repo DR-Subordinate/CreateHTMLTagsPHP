@@ -278,7 +278,7 @@ switch ($_POST['condition']) {
 		<th>C</th>
 	</tr>
 	<tr>
-		<td<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php endif; ?>>新<br>品</td>
+		<td<?php if($conditionText == "N"):?> bgcolor="#FFF766"<?php endif; ?>>新<br>品</td>
 		<td<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php endif; ?>>未<br>使<br>用<br>品</td>
 		<td<?php if($_POST['condition'] == "SA"):?> bgcolor="#FFF766"<?php endif; ?>>超<br>美<br>品</td>
 		<td<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php endif; ?>>中<br>古<br>美<br>品</td>

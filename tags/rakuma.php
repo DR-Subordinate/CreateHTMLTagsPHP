@@ -103,7 +103,13 @@
 
 <?php endif; ?>
 <?php if(!empty($_POST['condition'])): ?>
-商品ランク　　<?php echo $_POST['condition']; ?>　　<?php endif; ?>
+<?php
+$conditionText = $_POST['condition'];
+if ($_POST['condition'] === "N　エルメス食器" || $_POST['condition'] === "N　バカラ") {
+    $conditionText = "N";
+  }
+?>
+商品ランク　　<?php echo $conditionText; ?>　　<?php endif; ?>
 <?php 
 
 switch ($_POST['condition']) {
@@ -130,6 +136,12 @@ switch ($_POST['condition']) {
         break;
     case "C":
         echo "（強い使用感あり　劣化や大きい汚れなどがある）";
+        break;
+    case "N　エルメス食器":
+        echo "（新品※リモージュ焼きの製法上、ピンホール（小さな凹み）や光にかざすと見える程度の傷、濃淡差、色飛び（抜け）が生じる場合がございます。）";
+        break;
+    case "N　バカラ":
+        echo "（新品※クリスタルガラスの特性・製法上、僅かな凹凸等がある場合がございます。）";
         break;
 }
 ?>

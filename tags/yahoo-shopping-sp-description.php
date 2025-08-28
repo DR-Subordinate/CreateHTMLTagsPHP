@@ -182,7 +182,13 @@ switch ($_POST['country-of-manufacture']) {
 <img src="https://shopping.c.yimg.jp/lib/brand-across/title_item_2.jpg" style="vertical-align: bottom" alt="商品ランク" width="100%">
 <table class="tblitemrank" width="100%" style="border-collapse:collapse;">
 <tr>
-<th width="20%" bgcolor="#EBE8D7" style="padding:8px;border:#dddddd solid 1px;font-size:24px;font-weight:bold;color:#bf0000;"><?php echo $_POST['condition']; ?></th>
+<?php
+$conditionText = $_POST['condition'];
+if ($_POST['condition'] === "N　エルメス食器" || $_POST['condition'] === "N　バカラ") {
+    $conditionText = "N";
+  }
+?>
+<th width="20%" bgcolor="#EBE8D7" style="padding:8px;border:#dddddd solid 1px;font-size:24px;font-weight:bold;color:#bf0000;"><?php echo $conditionText; ?></th>
 <td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;">
 <?php 
 switch ($_POST['condition']) {
@@ -209,6 +215,12 @@ switch ($_POST['condition']) {
         break;
     case "C":
         echo "<b>強い使用感あり　劣化や大きい汚れなどがある</b>";
+        break;
+    case "N　エルメス食器":
+        echo "<b>新品</b><br>※リモージュ焼きの製法上、ピンホール（小さな凹み）や光にかざすと見える程度の傷、濃淡差、色飛び（抜け）が生じる場合がございます。";
+        break;
+    case "N　バカラ":
+        echo "<b>新品</b><br>※クリスタルガラスの特性・製法上、僅かな凹凸等がある場合がございます。";
         break;
 }
 ?></td></tr>
@@ -250,7 +262,7 @@ switch ($_POST['condition']) {
 <th style="background-color:#EBE8D7;font-weight:normal;text-align:center;border-width:1px;border-style:solid;border-color:#dddddd;font-size:12px;" >C</th>
 </tr>
 <tr>
-<td<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">新<br>品</td>
+<td<?php if($conditionText == "N"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">新<br>品</td>
 <td<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">未<br>使<br>用<br>品</td>
 <td<?php if($_POST['condition'] == "SA"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">超<br>美<br>品</td>
 <td<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">中<br>古<br>美<br>品</td>
@@ -260,7 +272,7 @@ switch ($_POST['condition']) {
 <td<?php if($_POST['condition'] == "C"):?> bgcolor="#FFF766"<?php endif; ?> style="text-align:center;border:#dddddd solid 1px;">破<br>損<br>有</td>
 </tr>
 </table>
-<?php if($_POST['condition'] == "N"): ?>
+<?php if($conditionText == "N"): ?>
 <br><br><img src="https://shopping.c.yimg.jp/lib/brand-across/newitem_notes.jpg" width="100%">
 <?php endif; ?>
 <?php if($_POST['condition'] == "S"): ?>

@@ -288,7 +288,7 @@ switch ($_POST['condition']) {
   <th bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">C</th>
 </tr>
 <tr>
-  <td<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php else: ?> bgcolor="#FFFFFF"<?php endif; ?> align="center" style="padding:8px; border:#dddddd solid 1px;">新<br>品</td>
+  <td<?php if($conditionText == "N"):?> bgcolor="#FFF766"<?php else: ?> bgcolor="#FFFFFF"<?php endif; ?> align="center" style="padding:8px; border:#dddddd solid 1px;">新<br>品</td>
   <td<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php else: ?> bgcolor="#FFFFFF"<?php endif; ?> align="center" style="padding:8px; border:#dddddd solid 1px;">未<br>使<br>用<br>品</td>
   <td<?php if($_POST['condition'] == "SA"):?> bgcolor="#FFF766"<?php else: ?> bgcolor="#FFFFFF"<?php endif; ?> align="center" style="padding:8px; border:#dddddd solid 1px;">超<br>美<br>品</td>
   <td<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php else: ?> bgcolor="#FFFFFF"<?php endif; ?> align="center" style="padding:8px; border:#dddddd solid 1px;">中<br>古<br>美<br>品</td>

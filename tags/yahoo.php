@@ -330,8 +330,14 @@
 <TR>
 <TD ALIGN=center BGCOLOR=#ffffff WIDTH=10%>
 <B>
+<?php
+$conditionText = $_POST['condition'];
+if ($_POST['condition'] === "N　エルメス食器" || $_POST['condition'] === "N　バカラ") {
+    $conditionText = "N";
+  }
+?>
 <FONT SIZE="7" color="#ff0000">
-<?php echo $_POST['condition']; ?>
+<?php echo $conditionText; ?>
 </font>
 </B>
 </TD>

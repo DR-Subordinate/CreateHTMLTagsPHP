@@ -220,8 +220,14 @@ switch ($_POST['country-of-manufacture']) {
 </table>
 </td>
 </tr>
+<?php
+$conditionText = $_POST['condition'];
+if ($_POST['condition'] === "N　エルメス食器" || $_POST['condition'] === "N　バカラ") {
+    $conditionText = "N";
+  }
+?>
 <tr>
-<td bgcolor="#EEE" width="80"><center><font size="7" color="#F00"><?php echo $_POST['condition']; ?></font></center></td>
+<td bgcolor="#EEE" width="80"><center><font size="7" color="#F00"><?php echo $conditionText; ?></font></center></td>
 <td>
 <font size="2">
 <?php 
@@ -250,6 +256,12 @@ switch ($_POST['condition']) {
         break;
     case "C":
         echo "<b>強い使用感あり　劣化や大きい汚れなどがある</b>";
+        break;
+    case "N　エルメス食器":
+        echo '<b>新品</b><br><font size="1">※リモージュ焼きの製法上、ピンホール（小さな凹み）や光にかざすと見える程度の傷、濃淡差、色飛び（抜け）が生じる場合がございます。</font>';
+        break;
+    case "N　バカラ":
+        echo '<b>新品</b><br><font size="1">※クリスタルガラスの特性・製法上、僅かな凹凸等がある場合がございます。</font>';
         break;
 }
  ?>

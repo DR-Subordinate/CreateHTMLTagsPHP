@@ -160,7 +160,7 @@
               <textarea name="inside" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">特記<label class="ml-14 font-normal">純正箱ダメージ案内を追加<input type="checkbox" name="original-box-damage"></label><label class="ml-14 font-normal">エルメス食器<input type="checkbox" name="hermes-dishes"></label></p>
+              <p class="font-bold">特記<label class="ml-7 font-normal">純正箱ダメージ案内<input type="checkbox" name="original-box-damage"></label><label class="ml-7 font-normal">エルメス食器<input type="checkbox" name="hermes-dishes"></label><label class="ml-7 font-normal">バカラ<input type="checkbox" name="baccarat"></label></p>
               <textarea name="special-note" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
@@ -589,6 +589,16 @@
             specialNoteTextarea.value += hermesDishesText;
         } else {
             specialNoteTextarea.value = specialNoteTextarea.value.replace(hermesDishesText, "");
+        }
+      });
+
+      const baccaratCheckbox = document.querySelector('input[name="baccarat"]');
+      const baccaratText = "※純正箱には入荷過程に伴う、若干の凹みやスレ・傷等がある場合がございます。";
+      baccaratCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+            specialNoteTextarea.value += baccaratText;
+        } else {
+            specialNoteTextarea.value = specialNoteTextarea.value.replace(baccaratText, "");
         }
       });
     </script>

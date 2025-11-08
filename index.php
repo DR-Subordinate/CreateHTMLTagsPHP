@@ -10,7 +10,7 @@
     <div class="w-[500px] m-3 border border-black">
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">N</span>
-        <span>新品※金具部分など輸送・検品の際にどうしてもついてしまう僅かなスレ傷がある場合がございます。</span>
+        <span>新品※製造・輸送・検品の際にどうしてもついてしまう僅かなスレ・押し跡・ほつれ等がある場合がございます。</span>
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">S</span>
@@ -18,7 +18,7 @@
       </div>
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">SA</span>
-        <span>新品同様品 細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品</span>
+        <span>超美品 細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品</span>
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">A</span>

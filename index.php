@@ -132,7 +132,7 @@
               <textarea name="containable-item" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">付属品</p>
+              <p class="font-bold">付属品<label class="ml-7 font-normal">純正箱 / 保存袋<input type="checkbox" name="original-box-storage-bag"></label><label class="ml-7 font-normal">無し<input type="checkbox" name="no-accessories"></label></p>
               <textarea name="accessory" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
@@ -611,6 +611,27 @@
           appendText(specialNoteTextarea, baccaratText);
         } else {
           removeText(specialNoteTextarea, baccaratText);
+        }
+      });
+
+      const originalBoxStorageBagCheckbox = document.querySelector('input[name="original-box-storage-bag"]');
+      const accessoryTextarea = document.querySelector('textarea[name="accessory"]');
+      const originalBoxStorageBagText = "純正箱 / 保存袋";
+      originalBoxStorageBagCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(accessoryTextarea, originalBoxStorageBagText);
+        } else {
+          removeText(accessoryTextarea, originalBoxStorageBagText);
+        }
+      });
+
+      const noAccessoriesCheckbox = document.querySelector('input[name="no-accessories"]');
+      const noAccessoriesText = "なし ※本体のみ販売";
+      noAccessoriesCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(accessoryTextarea, noAccessoriesText);
+        } else {
+          removeText(accessoryTextarea, noAccessoriesText);
         }
       });
     </script>

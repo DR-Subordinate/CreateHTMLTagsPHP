@@ -109,7 +109,14 @@
             </div>
             <div class="p-1 border-b border-black">
               <p class="font-bold">性別</p>
-              <textarea name="sex" cols="40" rows="2" class="border border-black"></textarea>
+              <select name="sex" class="border border-black">
+                <option value="" selected>選択してください</option>
+                <option value="ladies-mens">レディース / メンズ</option>
+                <option value="mens-ladies">メンズ / レディース</option>
+                <option value="ladies">レディース</option>
+                <option value="mens">メンズ</option>
+                <option value="kids">キッズ</option>
+              </select>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">参考定価</p>

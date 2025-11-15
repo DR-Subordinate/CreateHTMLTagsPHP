@@ -95,7 +95,25 @@ switch ($_POST['country-of-manufacture']) {
 <?php if(!empty($_POST['sex'])): ?>
 <tr>
 <th width="20%" bgcolor="#EBE8D7" style="padding:8px;border:#dddddd solid 1px;">性別</th>
-<td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;"><?php echo nl2br($_POST['sex']); ?></td>
+<td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;"><?php
+switch ($_POST['sex']) {
+    case "ladies-mens":
+        echo "レディース / メンズ";
+        break;
+    case "mens-ladies":
+        echo "メンズ / レディース";
+        break;
+    case "ladies":
+        echo "レディース";
+        break;
+    case "mens":
+        echo "メンズ";
+        break;
+    case "kids":
+        echo "キッズ";
+        break;
+}
+ ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['price'])): ?>

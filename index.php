@@ -545,14 +545,26 @@
         itemCategoryURL.value = "";
       });
 
+      function appendText(targetTextarea, text) {
+        if (!targetTextarea.value.includes(text)) {
+          targetTextarea.value += targetTextarea.value.trim() === "" ? text : "\n" + text;
+        }
+      }
+
+      function removeText(targetTextarea, text) {
+        targetTextarea.value = targetTextarea.value
+          .replace("\n" + text, "")
+          .replace(text, "");
+        }
+
       const noDamageOutsideCheckbox = document.querySelector('input[name="no-damage-outside"]');
       const outsideTextarea = document.querySelector('textarea[name="outside"]');
       const noDamageOutsideText = "特記すべき目立つダメージ無し。";
       noDamageOutsideCheckbox.addEventListener("change", e => {
         if (e.target.checked) {
-            outsideTextarea.value += noDamageOutsideText;
+          appendText(outsideTextarea, noDamageOutsideText);
         } else {
-            outsideTextarea.value = outsideTextarea.value.replace(noDamageOutsideText, "");
+          removeText(outsideTextarea, noDamageOutsideText);
         }
       });
 
@@ -561,9 +573,9 @@
       const noDamageInsideText = "特記すべき目立つダメージ無し。";
       noDamageInsideCheckbox.addEventListener("change", e => {
         if (e.target.checked) {
-            insideTextarea.value += noDamageInsideText;
+          appendText(insideTextarea, noDamageInsideText);
         } else {
-            insideTextarea.value = insideTextarea.value.replace(noDamageInsideText, "");
+          removeText(insideTextarea, noDamageInsideText);
         }
       });
 
@@ -572,9 +584,9 @@
       const originalBoxDamageText = "※純正箱には入荷過程による汚れや擦れ等のダメージがある場合がございます。予めご了承ください。";
       originalBoxDamageCheckbox.addEventListener("change", e => {
         if (e.target.checked) {
-            specialNoteTextarea.value += originalBoxDamageText;
+          appendText(specialNoteTextarea, originalBoxDamageText);
         } else {
-            specialNoteTextarea.value = specialNoteTextarea.value.replace(originalBoxDamageText, "");
+          removeText(specialNoteTextarea, originalBoxDamageText);
         }
       });
 
@@ -586,9 +598,9 @@
 ※純正箱に入荷過程による凹みや僅かな擦れ・小汚れ等がある場合がございます。`;
       hermesDishesCheckbox.addEventListener("change", e => {
         if (e.target.checked) {
-            specialNoteTextarea.value += hermesDishesText;
+          appendText(specialNoteTextarea, hermesDishesText);
         } else {
-            specialNoteTextarea.value = specialNoteTextarea.value.replace(hermesDishesText, "");
+          removeText(specialNoteTextarea, hermesDishesText);
         }
       });
 
@@ -596,9 +608,9 @@
       const baccaratText = "※純正箱には入荷過程に伴う、若干の凹みやスレ・傷等がある場合がございます。";
       baccaratCheckbox.addEventListener("change", e => {
         if (e.target.checked) {
-            specialNoteTextarea.value += baccaratText;
+          appendText(specialNoteTextarea, baccaratText);
         } else {
-            specialNoteTextarea.value = specialNoteTextarea.value.replace(baccaratText, "");
+          removeText(specialNoteTextarea, baccaratText);
         }
       });
     </script>

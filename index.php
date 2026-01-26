@@ -18,11 +18,11 @@
       </div>
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">SA</span>
-        <span>超美品 細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品</span>
+        <span>超美品 細かなあまり目立たないダメージがある程度の新品同様に綺麗なUSED商品</span>
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">A</span>
-        <span>中古美品 多少の使用感・ダメージ等はあるが、比較的奇麗な商品</span>
+        <span>中古美品 多少の使用感・ダメージ等はあるが、比較的綺麗な商品</span>
       </div>
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">AB</span>

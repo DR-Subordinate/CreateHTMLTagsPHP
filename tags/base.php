@@ -1,3 +1,5 @@
+✈️ We ship internationally
+
 <?php if(!empty($_POST['brand'])): ?>
 【ブランド】
 <?php echo $_POST['brand']; ?>
